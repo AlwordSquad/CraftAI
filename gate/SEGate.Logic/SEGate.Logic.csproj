@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\blocks.json" />
+    <None Remove="Resources\commands.json" />
+    <None Remove="Resources\registries.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blocks.json" />
+    <EmbeddedResource Include="Resources\commands.json" />
+    <EmbeddedResource Include="Resources\registries.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SEGate.Interface\SEGate.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LLAPI\Handshaking\Clientbound\" />
+    <Folder Include="LLAPI\Play\Serverbound\" />
+    <Folder Include="LLAPI\Status\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Iconic.Zlib.Netstandard" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="NbtLib" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

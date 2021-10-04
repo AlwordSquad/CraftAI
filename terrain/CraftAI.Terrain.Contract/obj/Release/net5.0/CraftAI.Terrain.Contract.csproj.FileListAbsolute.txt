@@ -1,0 +1,12 @@
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\bin\Release\net5.0\CraftAI.Terrain.Contract.deps.json
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\bin\Release\net5.0\CraftAI.Terrain.Contract.dll
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\bin\Release\net5.0\ref\CraftAI.Terrain.Contract.dll
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\bin\Release\net5.0\CraftAI.Terrain.Contract.pdb
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.csproj.AssemblyReference.cache
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.AssemblyInfoInputs.cache
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.AssemblyInfo.cs
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.csproj.CoreCompileInputs.cache
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.dll
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\ref\CraftAI.Terrain.Contract.dll
+C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\obj\Release\net5.0\CraftAI.Terrain.Contract.pdb

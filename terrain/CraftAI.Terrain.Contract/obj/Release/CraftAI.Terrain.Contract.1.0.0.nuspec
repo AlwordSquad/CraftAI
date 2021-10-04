@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CraftAI.Terrain.Contract</id>
+    <version>1.0.0</version>
+    <authors>CraftAI.Terrain.Contract</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\aasle\source\repos\CraftAI.Terrain\CraftAI.Terrain.Contract\bin\Release\net5.0\CraftAI.Terrain.Contract.dll" target="lib\net5.0\CraftAI.Terrain.Contract.dll" />
+  </files>
+</package>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SEGate.Logic.Tests": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SETest": "true"
+      }
+    }
+  }
+}

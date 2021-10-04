@@ -1,0 +1,122 @@
+[
+  { 
+    "blockName": "air",
+    "isSolid": false,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "stone",
+    "isSolid": true,
+    "backFaceTexture": 78,
+    "frontFaceTexture": 78,
+    "topFaceTexture": 78,
+    "bottomFaceTexture": 78,
+    "leftFaceTexture": 78,
+    "rightFaceTexture": 78
+  },
+  { 
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  { 
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  },
+  {
+    "blockName": "dirt",
+    "isSolid": true,
+    "backFaceTexture": 0,
+    "frontFaceTexture": 0,
+    "topFaceTexture": 0,
+    "bottomFaceTexture": 0,
+    "leftFaceTexture": 0,
+    "rightFaceTexture": 0
+  }
+]

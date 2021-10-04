@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Worker.Service", "CraftAI.Worker.Service\CraftAI.Worker.Service.csproj", "{2031CE32-F2F9-4FC9-BFF0-CCA015F53DCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Worker.Logic", "CraftAI.Worker.Logic\CraftAI.Worker.Logic.csproj", "{EA74B7E2-654C-4E87-8984-C574D6341A6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Craft.AI.Worker.Interface", "Craft.AI.Worker.Interface\Craft.AI.Worker.Interface.csproj", "{6D3D6EA0-365F-4FC0-9EFC-AEA6AC413584}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C86D4559-6B74-48F4-B686-EB28BE31FC63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftAI.Workter.Interface.Tests", "Tests\CraftAI.Workter.Interface.Tests\CraftAI.Workter.Interface.Tests.csproj", "{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2031CE32-F2F9-4FC9-BFF0-CCA015F53DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2031CE32-F2F9-4FC9-BFF0-CCA015F53DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2031CE32-F2F9-4FC9-BFF0-CCA015F53DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2031CE32-F2F9-4FC9-BFF0-CCA015F53DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA74B7E2-654C-4E87-8984-C574D6341A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA74B7E2-654C-4E87-8984-C574D6341A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA74B7E2-654C-4E87-8984-C574D6341A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA74B7E2-654C-4E87-8984-C574D6341A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3D6EA0-365F-4FC0-9EFC-AEA6AC413584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3D6EA0-365F-4FC0-9EFC-AEA6AC413584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3D6EA0-365F-4FC0-9EFC-AEA6AC413584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3D6EA0-365F-4FC0-9EFC-AEA6AC413584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB91F4C3-122C-4E7B-90F9-3A5ED0B33B95} = {C86D4559-6B74-48F4-B686-EB28BE31FC63}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF2B11A4-AE95-48B7-AD7E-FC3DD0F62CD1}
+	EndGlobalSection
+EndGlobal
