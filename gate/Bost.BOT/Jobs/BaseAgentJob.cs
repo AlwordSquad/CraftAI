@@ -11,7 +11,7 @@ namespace Bost.Agent.Jobs
 		private readonly IAgent _agent;
 		public Guid Id => Guid.NewGuid();
 		public IAgent Agent => _agent;
-		
+
 		public BaseAgentJob(IAgent agent)
 		{
 			_agent = agent;

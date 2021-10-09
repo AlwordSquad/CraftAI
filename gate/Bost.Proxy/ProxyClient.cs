@@ -8,20 +8,24 @@ namespace Bost.Proxy
 
 		public event MessageHandler OnSendMessage
 		{
-			add {
+			add
+			{
 				game2Proxy.OnSendMessage += value;
 			}
-			remove {
+			remove
+			{
 				game2Proxy.OnSendMessage -= value;
 			}
 		}
 
 		public event MessageHandler OnReciveMessage
 		{
-			add {
+			add
+			{
 				proxy2Server.OnReciveMessage += value;
 			}
-			remove {
+			remove
+			{
 				proxy2Server.OnReciveMessage -= value;
 			}
 		}

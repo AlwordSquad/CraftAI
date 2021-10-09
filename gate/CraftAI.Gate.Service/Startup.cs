@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CraftAI.Gate.Logic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,7 @@ namespace CraftAI.Gate.Service
 		{
 			services.AddGrpc();
 			services.AddSEGate();
+			services.AddCraftAIFeatures();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

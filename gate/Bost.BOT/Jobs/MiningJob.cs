@@ -1,6 +1,5 @@
 ﻿using Bost.Agent.Abstractions;
 using Bost.Agent.Model;
-using Serilog;
 using System.Threading;
 
 namespace Bost.Agent.Jobs

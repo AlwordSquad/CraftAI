@@ -3,7 +3,6 @@ using Bost.Agent.Enum;
 using Bost.Agent.Extentions;
 using Bost.Agent.Jobs;
 using Bost.Agent.Model;
-using Serilog;
 using System.Diagnostics;
 
 namespace Bost.Agent.Missions

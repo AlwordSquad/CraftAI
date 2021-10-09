@@ -1,13 +1,16 @@
-﻿using Grpc.Core;
+﻿using CraftAI.Gate.Features.Abstractions;
+using Grpc.Core;
+using MediatR;
 using System.Threading.Tasks;
 
 namespace CraftAI.Gate.Service.Services
 {
 	public class PlayServerbound : CraftAIPlayServerbound.CraftAIPlayServerboundBase
 	{
-		public override Task<Void> Connect(ConnectRequest request, ServerCallContext context)
-		{
-			return base.Connect(request, context);
-		}
+		private readonly IMediator _mediator;
+		public PlayServerbound(IMediator mediator) => _mediator = mediator;
+		public override Task<ConnectResponse> Connect(ConnectRequest request, ServerCallContext context)
+			=> _mediator.Send(new BaseRequest<ConnectRequest, ConnectResponse>(request));
+
 	}
 }

@@ -8,5 +8,5 @@ package craftai.entity;
 // The greeting service definition.
 service CraftAIPlayServerbound {
   // Sends a greeting
-  rpc Connect (craftai.entity.ConnectRequest) returns (craftai.entity.Void);
+  rpc Connect (craftai.entity.ConnectRequest) returns (craftai.entity.ConnectResponse);
 }

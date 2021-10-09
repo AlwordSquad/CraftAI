@@ -27,7 +27,7 @@ namespace Bost.Agent
 			OnRecive += ConnectionListner.ReciveListner;
 			OnSend += ConnectionListner.SendListner;
 			Reset += (e, x) => ConnectionListner.Reset();
-			
+
 			// clientbound
 			ConnectionListner.Subscribe(new SpawnPlayerHandler(this));
 			ConnectionListner.Subscribe(new PlayerInfoHandler(this));

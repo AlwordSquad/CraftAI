@@ -12,7 +12,8 @@ namespace Bost.Proto.Mapping
 
 		public ChunkSection this[int y]
 		{
-			get {
+			get
+			{
 				if (chunkSections.ContainsKey(y))
 				{
 					return chunkSections[y];

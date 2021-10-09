@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj" />
+    <ProjectReference Include="..\CraftAI.Gate.Logic\CraftAI.Gate.Features.csproj" />
     <ProjectReference Include="..\SEGate.Logic\SEGate.Logic.csproj" />
   </ItemGroup>
 

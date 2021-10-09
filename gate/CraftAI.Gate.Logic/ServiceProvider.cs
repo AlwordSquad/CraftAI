@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CraftAI.Gate.Logic
 {
@@ -6,6 +7,7 @@ namespace CraftAI.Gate.Logic
 	{
 		public static IServiceCollection AddCraftAIFeatures(this IServiceCollection services)
 		{
+			services.AddMediatR(typeof(ServiceProvider));
 			return services;
 		}
 	}

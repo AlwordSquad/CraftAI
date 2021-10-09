@@ -16,7 +16,8 @@ namespace Bost.Agent.Model
 		}
 		public BlockState this[Int3 location]
 		{
-			get {
+			get
+			{
 				Int3 chunkSectionKey = location.GetChunk();
 				Int2 chunkKey = new Int2(chunkSectionKey.X, chunkSectionKey.Z);
 				if (Chunks.ContainsKey(chunkKey))
