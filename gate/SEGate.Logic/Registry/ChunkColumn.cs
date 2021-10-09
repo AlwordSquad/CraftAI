@@ -8,16 +8,15 @@ namespace SEGate.Logic.Registry
 		public const int SizeX = 16;
 		public const int SizeY = 256;
 		public const int SizeZ = 16;
-
-		Dictionary<int, ChunkSection> chunkSections;
-
+		private readonly Dictionary<int, ChunkSection> _chunks = new Dictionary<int, ChunkSection>(SizeY / ChunkSection.SizeY);
+		public IReadOnlyDictionary<int, ChunkSection> Chunks { get => _chunks; }
 		public ChunkSection this[int y]
 		{
 			get
 			{
-				if (chunkSections.ContainsKey(y))
+				if (Chunks.ContainsKey(y))
 				{
-					return chunkSections[y];
+					return Chunks[y];
 				}
 				else
 				{
@@ -28,14 +27,13 @@ namespace SEGate.Logic.Registry
 
 		public void Parse(Stream data, long[] primaryBitMask)
 		{
-			chunkSections = new Dictionary<int, ChunkSection>(SizeY / ChunkSection.SizeY);
 			for (int sectionY = 0; sectionY < SizeY / ChunkSection.SizeY; sectionY++)
 			{
 				if ((primaryBitMask[0] & 1 << sectionY) != 0)
 				{
 					var chunkSection = new ChunkSection();
 					chunkSection.Parse(data);
-					chunkSections.Add(sectionY, chunkSection);
+					_chunks.Add(sectionY, chunkSection);
 				}
 			}
 		}

@@ -18,7 +18,8 @@ namespace CraftAI.Worker.Logic.Services
 
 		public ValueTask Set(Chunk16x16x16 chunk)
 		{
-			throw new System.NotImplementedException();
+			return ValueTask.CompletedTask;
+			// throw new System.NotImplementedException();
 		}
 	}
 }

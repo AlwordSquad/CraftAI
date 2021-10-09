@@ -1,14 +1,17 @@
-﻿using CraftAI.Gate.Service;
+﻿using CraftAI.Gate.Features.Abstractions;
+using CraftAI.Gate.Service;
 using Grpc.Core;
+using MediatR;
 using System.Threading.Tasks;
 
 namespace CraftAI.Worker.Service.Services
 {
 	public class PlayClientbound : CraftAIPlayClientbound.CraftAIPlayClientboundBase
 	{
+		private readonly IMediator _mediator;
+		public PlayClientbound(IMediator mediator) => _mediator = mediator;
+
 		public override Task<Void> ChunkData(Chunk16x16x16 request, ServerCallContext context)
-		{
-			return base.ChunkData(request, context);
-		}
+			=> _mediator.Send(new BaseRequest<Chunk16x16x16, Void>(request));
 	}
 }

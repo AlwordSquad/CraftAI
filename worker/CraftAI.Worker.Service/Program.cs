@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
-using Serilog.Sinks.Grafana.Loki;
 using System.Threading.Tasks;
 
 namespace CraftAI.Worker.Service
@@ -14,10 +13,6 @@ namespace CraftAI.Worker.Service
 			Log.Logger = new LoggerConfiguration()
 				.MinimumLevel.Information()
 				.WriteTo.Console()
-				.WriteTo.GrafanaLoki("http://localhost:3100")
-				.Enrich.FromLogContext()
-				.Enrich.WithProperty("instance", "worker_1")
-				.Enrich.AtLevel(LogEventLevel.Error, e => e.WithProperty("level", nameof(LogEventLevel.Error)))
 				.Enrich.AtLevel(LogEventLevel.Fatal, e => e.WithProperty("level", nameof(LogEventLevel.Fatal)))
 				.CreateLogger();
 			await CreateHostBuilder(args).Build().RunAsync();
@@ -30,6 +25,6 @@ namespace CraftAI.Worker.Service
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
 					webBuilder.UseStartup<Startup>();
-				}).UseSerilog();
+				}).UseSerilog((ctx, cfg) => cfg.ReadFrom.Configuration(ctx.Configuration, "Serilog"));
 	}
 }

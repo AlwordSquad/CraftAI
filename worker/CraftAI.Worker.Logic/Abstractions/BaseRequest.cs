@@ -1,10 +1,27 @@
 ﻿using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
-namespace CraftAI.Worker.Logic.Abstractions
+namespace CraftAI.Gate.Features.Abstractions
 {
-	public class BaseRequest<T> : IRequest
+	public struct BaseRequest<T> : IRequest
 	{
-		public BaseRequest(T value) { Value = value; }
 		public T Value { get; set; }
+	}
+
+	public struct BaseRequest<T, Q> : IRequest<Q>
+	{
+		public BaseRequest(T request) => Value = request;
+		public T Value { get; set; }
+	}
+
+	public abstract class BaseRequestHandler<T, Q> : IRequestHandler<BaseRequest<T, Q>, Q>
+	{
+		public Task<Q> Handle(BaseRequest<T, Q> request, CancellationToken cancellationToken)
+		{
+			return Handle(request.Value, cancellationToken);
+		}
+
+		protected abstract Task<Q> Handle(T request, CancellationToken cancellationToken);
 	}
 }

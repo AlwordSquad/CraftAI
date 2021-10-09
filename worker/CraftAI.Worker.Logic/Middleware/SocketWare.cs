@@ -21,12 +21,15 @@ namespace CraftAI.Worker.Logic.Middleware
 		}
 		public async Task Invoke(HttpContext context)
 		{
-			if (!context.WebSockets.IsWebSocketRequest)
+			if (context.WebSockets.IsWebSocketRequest)
 			{
-				return;
+				using var socket = await context.WebSockets.AcceptWebSocketAsync();
+				await RunAsync(socket);
 			}
-			using var socket = await context.WebSockets.AcceptWebSocketAsync();
-			await RunAsync(socket);
+			else
+			{
+				await _next.Invoke(context);
+			}
 		}
 
 		private async Task RunAsync(WebSocket socket)

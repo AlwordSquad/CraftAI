@@ -1,7 +1,7 @@
-﻿using CraftAI.Gate.Service;
-using CraftAI.Worker.Logic.Abstractions;
+﻿using CraftAI.Gate.Features.Abstractions;
+using CraftAI.Gate.Service;
 using CraftAI.Worker.Logic.Services;
-using MediatR;
+using Serilog;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,17 +9,18 @@ namespace CraftAI.Worker.Logic.GateApiService.Play
 {
 	public class SetChunkData
 	{
-		public class Handler : IRequestHandler<BaseRequest<Chunk16x16x16>>
+		public class Handler : BaseRequestHandler<Chunk16x16x16, Void>
 		{
 			private readonly ITerrainService _terrainService;
 			public Handler(ITerrainService terrainService)
 			{
 				_terrainService = terrainService;
 			}
-			public async Task<Unit> Handle(BaseRequest<Chunk16x16x16> request, CancellationToken cancellationToken)
+			protected override async Task<Void> Handle(Chunk16x16x16 request, CancellationToken cancellationToken)
 			{
-				await _terrainService.Set(request.Value);
-				return Unit.Value;
+				Log.Information($"{(nameof(SetChunkData))} {request.X}.{request.Y}.{request.Z}");
+				await _terrainService.Set(request);
+				return new Void();
 			}
 		}
 	}

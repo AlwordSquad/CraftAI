@@ -14,6 +14,24 @@ namespace SEGate.Logic.Registry
 
 		public BlockId[,,] blockIds = new BlockId[16, 16, 16];
 
+		public int[] GetState()
+		{
+			int index = 0;
+			int[] state = new int[SizeX * SizeY * SizeZ];
+			for (int x = 0; x < SizeX; x++)
+			{
+				for (int y = 0; y < SizeY; y++)
+				{
+					for (int z = 0; z < SizeZ; z++)
+					{
+						state[index] = checked((ushort)blockIds[x, y, z].StateId);
+						index += 1;
+					}
+				}
+			}
+			return state;
+		}
+
 		public void Parse(Stream data)
 		{
 			var nonAirBlocksCount = (short)LShort.Convertor.Read(data);

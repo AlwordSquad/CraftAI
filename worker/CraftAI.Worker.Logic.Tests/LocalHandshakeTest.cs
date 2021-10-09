@@ -1,7 +1,7 @@
 using Xunit;
 namespace CraftAI.Worker.Logic.Tests
 {
-	public class UnitTest1
+	public class LocalHandshakeTest
 	{
 		[Fact]
 		public void ConnectUsingGrpc()
@@ -11,7 +11,7 @@ namespace CraftAI.Worker.Logic.Tests
 			var result = gate.Connect(new Gate.Service.ConnectRequest()
 			{
 				ServerUri = "localhost:25565",
-				Nickname = "TestAlword"
+				Nickname = "TestAlword3"
 			});
 			Assert.NotEmpty(result.Uuid);
 		}

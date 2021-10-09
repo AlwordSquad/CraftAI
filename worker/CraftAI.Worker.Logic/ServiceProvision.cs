@@ -11,7 +11,7 @@ namespace CraftAI.Worker.Logic
 		public static IServiceCollection AddCraftAIWorker(this IServiceCollection services)
 		{
 			services.AddMediatR(typeof(ServiceProvision));
-			services.AddSingleton<ITerrainService, TerrainDev>();
+			services.AddSingleton<ITerrainService, TerrainInMemory>();
 			services.AddSingleton<IEventHub, EventHandlerCollection>();
 			EventHandlerCollection.Configure(services);
 

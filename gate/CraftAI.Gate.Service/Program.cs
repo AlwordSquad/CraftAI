@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 namespace CraftAI.Gate.Service
 {
@@ -17,6 +18,7 @@ namespace CraftAI.Gate.Service
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
 					webBuilder.UseStartup<Startup>();
-				});
+				})
+			.UseSerilog();
 	}
 }

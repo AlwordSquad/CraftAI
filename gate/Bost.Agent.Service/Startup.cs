@@ -41,11 +41,7 @@ namespace Bost.Agent.Service
 				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bost.Agent.Service v1"));
 			}
 
-			app.UseHttpsRedirection();
-
 			app.UseRouting();
-
-			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>
 			{
