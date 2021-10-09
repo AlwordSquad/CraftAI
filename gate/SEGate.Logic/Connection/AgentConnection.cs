@@ -2,6 +2,7 @@
 using System;
 using System.Net.Sockets;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace SEGate.Logic.Connection
 {
@@ -32,7 +33,7 @@ namespace SEGate.Logic.Connection
 			}
 			SendHandshakeLogin();
 			ReceiveLogin();
-			ReceivePlay();
+			Task.Factory.StartNew(ReceivePlay);
 			return _cancelTokenSource.Token;
 		}
 

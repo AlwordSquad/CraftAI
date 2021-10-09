@@ -1,4 +1,5 @@
 ﻿using CraftAI.Gate.Logic;
+using CraftAI.Gate.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,6 +33,7 @@ namespace CraftAI.Gate.Service
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapGrpcService<GreeterService>();
+				endpoints.MapGrpcService<PlayServerbound>();
 
 				endpoints.MapGet("/", async context =>
 				{

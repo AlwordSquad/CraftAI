@@ -15,7 +15,6 @@ namespace SEGate.Logic.EventHandler
 			var chunkColumn = new ChunkColumn();
 			using var stream = new MemoryStream(data);
 			chunkColumn.Parse(stream, packetData.PrimaryBitMask);
-			throw new System.NotImplementedException();
 		}
 	}
 }

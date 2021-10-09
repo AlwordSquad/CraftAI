@@ -3,7 +3,7 @@ using SEGate.Logic.LLAPI.Play.Shared;
 
 namespace SEGate.Logic.EventHandler
 {
-	public class EventCollection : IEventHandler<KeepAlivePacket>
+	public class KeepAliveEventHandler : IEventHandler<KeepAlivePacket>
 	{
 		public void Consume(IAgentConnection agentConnection, KeepAlivePacket packetData)
 		{

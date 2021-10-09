@@ -14,7 +14,7 @@ namespace SEGate.Logic.EventHandler
 
 		public EventHandlers(IServiceProvider serviceProvider)
 		{
-			if (types.Any()) throw new InvalidOperationException(
+			if (!types.Any()) throw new InvalidOperationException(
 				$"Event handlers not found. " +
 				$"Call {nameof(EventHandlers)}{nameof(EventHandlers.RegisterCollections)} first");
 
@@ -41,7 +41,7 @@ namespace SEGate.Logic.EventHandler
 				.ToArray();
 			foreach (var type in assembly)
 			{
-				services.AddSingleton(assembly);
+				services.AddSingleton(type);
 			}
 			types = assembly;
 			return services;
