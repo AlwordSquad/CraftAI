@@ -1,0 +1,1 @@
+﻿dotnet mpc -i ".\Craft.AI.Worker.Interface\Craft.AI.Worker.Interface.csproj" -o ".\Craft.AI.Worker.Interface\MessagePackGenerated.cs"
