@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "CraftAI.Gate.Service";
+import "craftai.entity.chunkdata.proto";
+import "craftai.entity.proto";
+package CraftAi.Play.Clientbound;
+
+// The greeting service definition.
+service CraftAIPlayClientbound {
+  // Sends a greeting
+  rpc ChunkData (craftai.entity.Chunk16x16x16) returns (craftai.entity.Void);
+}

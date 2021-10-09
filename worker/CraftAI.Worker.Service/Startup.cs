@@ -1,5 +1,6 @@
 ﻿using CraftAI.Worker.Logic;
 using CraftAI.Worker.Logic.Middleware;
+using CraftAI.Worker.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,8 +34,7 @@ namespace CraftAI.Worker.Service
 
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapGrpcService<GreeterService>();
-
+				endpoints.MapGrpcService<PlayClientbound>();
 				endpoints.MapGet("/", async context =>
 				{
 					await context.Response.WriteAsync("Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");

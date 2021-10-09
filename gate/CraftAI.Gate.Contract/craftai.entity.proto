@@ -1,0 +1,5 @@
+syntax = "proto3";
+option csharp_namespace = "CraftAI.Gate.Service";
+package craftai.entity;
+// The greeting service definition.
+message Void { }

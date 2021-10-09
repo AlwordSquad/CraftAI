@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="craftai.handshake.proto" />
+    <None Remove="craftai.entity.chunkdata.proto" />
+    <None Remove="craftai.entity.connect.proto" />
+    <None Remove="craftai.entity.proto" />
+    <None Remove="craftai.play.clientbound.proto" />
+    <None Remove="craftai.play.serverbound.proto" />
     <None Remove="greet.proto" />
   </ItemGroup>
 
@@ -19,7 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="craftai.handshake.proto" GrpcServices="Both" />
+    <Protobuf Include="craftai.entity.connect.proto" GrpcServices="Both" />
+    <Protobuf Include="craftai.entity.proto" GrpcServices="Both" />
+    <Protobuf Include="craftai.entity.chunkdata.proto" GrpcServices="Both" />
+    <Protobuf Include="craftai.play.serverbound.proto" GrpcServices="Both" />
+    <Protobuf Include="craftai.play.clientbound.proto" GrpcServices="Both" />
     <Protobuf Include="greet.proto">
       <GrpcServices>Both</GrpcServices>
     </Protobuf>

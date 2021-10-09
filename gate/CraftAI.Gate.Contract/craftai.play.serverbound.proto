@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "CraftAI.Gate.Service";
+import "craftai.entity.connect.proto";
+import "craftai.entity.proto";
+package craftai.entity;
+
+// The greeting service definition.
+service CraftAIPlayServerbound {
+  // Sends a greeting
+  rpc Connect (craftai.entity.ConnectRequest) returns (craftai.entity.Void);
+}

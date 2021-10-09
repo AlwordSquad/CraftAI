@@ -4,7 +4,10 @@ using System.Collections.Generic;
 
 namespace CraftAI.Worker.Logic.Terrain
 {
-	public class Chunk
+	/// <summary>
+	/// Render data for UI
+	/// </summary>
+	public class ChunkMesh
 	{
 		public Int3[] Vertices => _vertices.ToArray();
 		public int[] Triangles => _triangles.ToArray();
@@ -22,7 +25,7 @@ namespace CraftAI.Worker.Logic.Terrain
 		public bool isVoxelMapPopulated = false;
 
 		private int _vertexIndex = 0;
-		public Chunk(ChunkCoord _coord, World world, byte[,,]? voxelMap = null)
+		public ChunkMesh(ChunkCoord _coord, World world, byte[,,]? voxelMap = null)
 		{
 			Coord = _coord;
 			_world = world;

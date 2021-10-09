@@ -1,4 +1,6 @@
-﻿using CraftAI.Worker.Logic.Terrain;
+﻿using CraftAI.Gate.Service;
+using CraftAI.Worker.Logic.Terrain;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -7,8 +9,8 @@ namespace CraftAI.Worker.Logic.Services
 	internal class TerrainDev : ITerrainService
 	{
 		private readonly World _world = new();
-		private readonly Dictionary<ChunkCoord, Chunk> _map = new();
-		public ValueTask<Chunk> Get(short chunkX, short chunkZ)
+		private readonly Dictionary<ChunkCoord, ChunkMesh> _map = new();
+		public ValueTask<ChunkMesh> Get(short chunkX, short chunkZ)
 		{
 			var coord = new ChunkCoord(chunkX, chunkZ);
 			if (!_map.ContainsKey(coord))
@@ -25,10 +27,15 @@ namespace CraftAI.Worker.Logic.Services
 						}
 					}
 				}
-				var chunk = new Chunk(coord, _world, _voxelMap);
+				var chunk = new ChunkMesh(coord, _world, _voxelMap);
 				_map.Add(coord, chunk);
 			}
-			return new ValueTask<Chunk>(_map[coord]);
+			return new ValueTask<ChunkMesh>(_map[coord]);
+		}
+
+		public ValueTask Set(Chunk16x16x16 chunk)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

@@ -12,7 +12,7 @@ namespace CraftAI.Worker.Logic.Terrain
 	public class World
 	{
 		public readonly BlockType[] Blocktypes;
-		private readonly Chunk[,] _chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
+		private readonly ChunkMesh[,] _chunks = new ChunkMesh[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
 		private readonly List<ChunkCoord> _activeChunks = new();
 		private readonly List<ChunkCoord> _chunksToCreate = new();
 
@@ -24,7 +24,7 @@ namespace CraftAI.Worker.Logic.Terrain
 			Blocktypes = System.Text.Json.JsonSerializer.Deserialize<BlockType[]>(text) ?? throw new ArgumentNullException();
 		}
 
-		public void SetChunk(Chunk chunk)
+		public void SetChunk(ChunkMesh chunk)
 		{
 			_chunks[chunk.Coord.X, chunk.Coord.Z] = chunk;
 		}
@@ -63,7 +63,7 @@ namespace CraftAI.Worker.Logic.Terrain
 						// Check if it active, if not, activate it.
 						if (_chunks[x, z] == null)
 						{
-							_chunks[x, z] = new Chunk(new ChunkCoord(x, z), this, null);
+							_chunks[x, z] = new ChunkMesh(new ChunkCoord(x, z), this, null);
 							_chunksToCreate.Add(new ChunkCoord(x, z));
 						}
 						else if (!_chunks[x, z].IsActive)

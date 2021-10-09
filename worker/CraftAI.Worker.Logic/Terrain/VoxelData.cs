@@ -5,8 +5,8 @@ namespace CraftAI.Worker.Logic.Terrain
 {
 	public static class VoxelData
 	{
-		public static readonly int ChunkWidth = 16 / 4;
-		public static readonly int ChunkHeight = 128 / 32;
+		public static readonly int ChunkWidth = 16;
+		public static readonly int ChunkHeight = 16;
 		public static readonly int WorldSizeInChunks = 100;
 		public static int WorldSizeInVoxels
 		{
