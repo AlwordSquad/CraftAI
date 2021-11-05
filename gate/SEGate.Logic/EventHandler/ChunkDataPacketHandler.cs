@@ -15,7 +15,7 @@ namespace SEGate.Logic.EventHandler
 			_client = client;
 		}
 
-		public async void Consume(IAgentConnection agentConnection, ChunkDataPacket packetData)
+		public void Consume(IAgentConnection agentConnection, ChunkDataPacket packetData)
 		{
 			var data = packetData.Data;
 			var chunkId = new Int2(packetData.ChunkX, packetData.ChunkZ);
@@ -31,7 +31,7 @@ namespace SEGate.Logic.EventHandler
 					Z = chunkId.Z
 				};
 				chunkData.BlockType.AddRange(colomn.Value.GetState());
-				await _client.ChunkDataAsync(chunkData);
+				_client.ChunkDataAsync(chunkData);
 			}
 		}
 	}

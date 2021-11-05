@@ -29,5 +29,17 @@ namespace CraftAI.Worker.Logic.Terrain
 			Log.Warning($"Not found face index {index}");
 			return backFaceTexture;
 		}
+
+		public static BlockType Unkwnown => new BlockType()
+		{
+			backFaceTexture = 0,
+			blockName = "default",
+			bottomFaceTexture = 0,
+			frontFaceTexture = 0,
+			isSolid = true,
+			leftFaceTexture = 0,
+			rightFaceTexture = 0,
+			topFaceTexture = 0
+		};
 	}
 }

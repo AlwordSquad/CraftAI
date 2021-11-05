@@ -1,27 +1,22 @@
 ﻿using Craft.AI.Worker.Interface.Network.Shared;
+using CraftAI.Worker.Logic.Services;
 using CraftAI.Worker.Logic.Utils;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Numerics;
-using System.Reflection;
 
 namespace CraftAI.Worker.Logic.Terrain
 {
 	public class World
 	{
-		public readonly BlockType[] Blocktypes;
+		public readonly ITextureService _textures;
 		private readonly ChunkMesh[,] _chunks = new ChunkMesh[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
 		private readonly List<ChunkCoord> _activeChunks = new();
 		private readonly List<ChunkCoord> _chunksToCreate = new();
 
 		public World()
 		{
-			using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CraftAI.Worker.Logic.Resources.BlockTypes.json");
-			using var reader = new StreamReader(stream ?? throw new ArgumentNullException());
-			var text = reader.ReadToEnd();
-			Blocktypes = System.Text.Json.JsonSerializer.Deserialize<BlockType[]>(text) ?? throw new ArgumentNullException();
+			_textures = new JsonTextureService();
 		}
 
 		public void SetChunk(ChunkMesh chunk)
@@ -94,8 +89,8 @@ namespace CraftAI.Worker.Logic.Terrain
 			if (!IsChunkInWorld(thisChunk) || pos.Y < 0 || pos.Y > VoxelData.ChunkHeight)
 				return false;
 			if (_chunks[thisChunk.X, thisChunk.Z] != null && _chunks[thisChunk.X, thisChunk.Z].isVoxelMapPopulated)
-				return Blocktypes[_chunks[thisChunk.X, thisChunk.Z].GetVoxelFromGlobalVector3(pos)].isSolid;
-			return Blocktypes[0].isSolid;
+				return _textures.Get(_chunks[thisChunk.X, thisChunk.Z].GetVoxelFromGlobalVector3(pos)).isSolid;
+			return _textures.Get(0).isSolid;
 		}
 
 		public bool IsChunkInWorld(ChunkCoord coord)
