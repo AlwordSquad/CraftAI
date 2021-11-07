@@ -1,4 +1,4 @@
-﻿using SEGate.Logic.Registry.Generator;
+﻿using CraftAI.Gate.Logic.Registry.Generator;
 using Xunit;
 
 namespace SEGate.Logic.Tests.Registry.Generator

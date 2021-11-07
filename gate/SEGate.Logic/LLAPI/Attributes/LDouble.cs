@@ -5,25 +5,24 @@ using System.Linq;
 namespace CraftAI.Gate.Logic.LLAPI.Attributes
 {
 	/// <summary>
-	/// Minecraft packet for <see cref="short"/>
+	/// Minecraft packet for <see cref="ushort"/>
 	/// </summary>
 	[AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
-	public class LShort : LType
+	public class LUShort : LType
 	{
-		public static readonly LShort Convertor = new();
 		public override dynamic Read(Stream stream)
 		{
 			var buffer = new byte[2];
 			stream.Read(buffer);
 			buffer = buffer.Reverse()
 				.ToArray();
-			var result = (short)BitConverter.ToInt16(buffer, 0);
+			var result = (ushort)BitConverter.ToInt16(buffer, 0);
 			return result;
 		}
 
 		public override void Write(dynamic value, Stream stream)
 		{
-			var val = (short)value;
+			var val = (ushort)value;
 			var bytes = BitConverter.GetBytes(val)
 				.Reverse()
 				.ToArray();

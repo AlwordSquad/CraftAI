@@ -2,27 +2,27 @@
 using System.IO;
 using System.Linq;
 
-namespace SEGate.Logic.LLAPI.Attributes
+namespace CraftAI.Gate.Logic.LLAPI.Attributes
 {
 	/// <summary>
-	/// Minecraft packet for <see cref="ushort"/>
+	/// Minecraft packet for <see cref="double"/>
 	/// </summary>
 	[AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
-	public class LUShort : LType
+	public class LDouble : LType
 	{
 		public override dynamic Read(Stream stream)
 		{
-			var buffer = new byte[2];
+			var buffer = new byte[8];
 			stream.Read(buffer);
 			buffer = buffer.Reverse()
 				.ToArray();
-			var result = (ushort)BitConverter.ToInt16(buffer, 0);
+			var result = (double)BitConverter.ToDouble(buffer, 0);
 			return result;
 		}
 
 		public override void Write(dynamic value, Stream stream)
 		{
-			var val = (ushort)value;
+			var val = (double)value;
 			var bytes = BitConverter.GetBytes(val)
 				.Reverse()
 				.ToArray();

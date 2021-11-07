@@ -12,7 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj" />
     <ProjectReference Include="..\CraftAI.Gate.Logic\CraftAI.Gate.Features.csproj" />
-    <ProjectReference Include="..\SEGate.Logic\SEGate.Logic.csproj" />
+    <ProjectReference Include="..\SEGate.Logic\CraftAI.Gate.Logic.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

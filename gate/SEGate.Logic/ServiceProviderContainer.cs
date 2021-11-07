@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using SEGate.Logic.Abstractions;
-using SEGate.Logic.Connection;
-using SEGate.Logic.EventHandler;
+﻿using CraftAI.Gate.Logic.Abstractions;
+using CraftAI.Gate.Logic.Connection;
+using CraftAI.Gate.Logic.EventHandler.Collection;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace SEGate.Logic
+namespace CraftAI.Gate.Logic
 {
 	public static class ServiceProviderContainer
 	{

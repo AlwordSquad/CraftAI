@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace SEGate.Logic.Registry.Generator
+namespace CraftAI.Gate.Logic.Registry.Generator
 {
 	public class JsonRegistries
 	{

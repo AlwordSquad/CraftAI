@@ -1,6 +1,6 @@
-﻿using SEGate.Logic.Connection;
+﻿using CraftAI.Gate.Logic.Connection;
 
-namespace SEGate.Logic.Abstractions
+namespace CraftAI.Gate.Logic.Abstractions
 {
 	public interface IServersHub
 	{

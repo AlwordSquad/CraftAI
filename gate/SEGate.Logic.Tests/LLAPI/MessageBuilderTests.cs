@@ -1,5 +1,6 @@
-﻿using SEGate.Logic.LLAPI;
-using SEGate.Logic.LLAPI.Handshaking;
+﻿using CraftAI.Gate.Logic.LLAPI;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Handshaking.Serverbound;
 using System.IO;
 using Xunit;
 

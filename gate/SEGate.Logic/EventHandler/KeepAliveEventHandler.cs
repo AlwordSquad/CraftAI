@@ -1,7 +1,7 @@
-﻿using SEGate.Logic.Abstractions;
-using SEGate.Logic.LLAPI.Play.Shared;
+﻿using CraftAI.Gate.Logic.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Play.Shared;
 
-namespace SEGate.Logic.EventHandler
+namespace CraftAI.Gate.Logic.EventHandler
 {
 	public class KeepAliveEventHandler : IEventHandler<KeepAlivePacket>
 	{

@@ -1,10 +1,10 @@
-﻿using SEGate.Logic.Abstractions;
-using SEGate.Logic.LLAPI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CraftAI.Gate.Logic.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
 
-namespace SEGate.Logic.Connection
+namespace CraftAI.Gate.Logic.Connection
 {
 	public sealed partial class AgentConnection : IAgentConnection
 	{

@@ -1,4 +1,4 @@
-﻿namespace SEGate.Logic.LLAPI
+﻿namespace CraftAI.Gate.Logic.LLAPI.Abstractions
 {
 	public interface IPacketData { }
 }

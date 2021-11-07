@@ -3,21 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Agent", "Bost.BOT\Bost.Agent.csproj", "{08EE9AE7-32C4-4F51-9018-FA05F6661A05}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Proto", "Bost.Proto\Bost.Proto.csproj", "{17E0E572-99E0-4409-9A91-FD84A77DCFB7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Proxy", "Bost.Proxy\Bost.Proxy.csproj", "{06759686-514D-4711-969A-C038668EED41}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{14F5EB95-A337-4E63-88D0-244DAB14E721}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Agent.Service", "Bost.Agent.Service\Bost.Agent.Service.csproj", "{DC60AEE8-430B-4F46-B1C7-3AE00D7453D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Logic", "SEGate.Logic\CraftAI.Gate.Logic.csproj", "{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.BOT.Tests", "Tests\Bost.BOT.Tests\Bost.BOT.Tests.csproj", "{A1B3F9BD-FE36-4582-9483-B23310F12D7F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEGate.Logic", "SEGate.Logic\SEGate.Logic.csproj", "{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEGate.Interface", "SEGate.Interface\SEGate.Interface.csproj", "{2873F9AA-6665-4F80-8D6E-96C12B76520E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Interface", "SEGate.Interface\CraftAI.Gate.Interface.csproj", "{2873F9AA-6665-4F80-8D6E-96C12B76520E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEGate.Logic.Tests", "SEGate.Logic.Tests\SEGate.Logic.Tests.csproj", "{C5E96DF9-D417-4126-A3F0-3B5848F263DB}"
 EndProject
@@ -25,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Service", "Cra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Contract", "CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj", "{D93CBEE2-5C62-49E8-A87A-64E2319AC5C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftAI.Gate.Features", "CraftAI.Gate.Logic\CraftAI.Gate.Features.csproj", "{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Features", "CraftAI.Gate.Logic\CraftAI.Gate.Features.csproj", "{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "old", "old", "{8B93824E-4EB0-4967-BAC7-8E31ED6CB0B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Proto", "Bost.Proto\Bost.Proto.csproj", "{422E8826-95A2-407D-B078-0D45FC549384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,26 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{08EE9AE7-32C4-4F51-9018-FA05F6661A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08EE9AE7-32C4-4F51-9018-FA05F6661A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08EE9AE7-32C4-4F51-9018-FA05F6661A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08EE9AE7-32C4-4F51-9018-FA05F6661A05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17E0E572-99E0-4409-9A91-FD84A77DCFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17E0E572-99E0-4409-9A91-FD84A77DCFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17E0E572-99E0-4409-9A91-FD84A77DCFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17E0E572-99E0-4409-9A91-FD84A77DCFB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06759686-514D-4711-969A-C038668EED41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06759686-514D-4711-969A-C038668EED41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06759686-514D-4711-969A-C038668EED41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06759686-514D-4711-969A-C038668EED41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC60AEE8-430B-4F46-B1C7-3AE00D7453D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC60AEE8-430B-4F46-B1C7-3AE00D7453D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC60AEE8-430B-4F46-B1C7-3AE00D7453D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC60AEE8-430B-4F46-B1C7-3AE00D7453D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1B3F9BD-FE36-4582-9483-B23310F12D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1B3F9BD-FE36-4582-9483-B23310F12D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1B3F9BD-FE36-4582-9483-B23310F12D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1B3F9BD-FE36-4582-9483-B23310F12D7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,13 +51,17 @@ Global
 		{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422E8826-95A2-407D-B078-0D45FC549384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422E8826-95A2-407D-B078-0D45FC549384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422E8826-95A2-407D-B078-0D45FC549384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422E8826-95A2-407D-B078-0D45FC549384}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A1B3F9BD-FE36-4582-9483-B23310F12D7F} = {14F5EB95-A337-4E63-88D0-244DAB14E721}
 		{C5E96DF9-D417-4126-A3F0-3B5848F263DB} = {14F5EB95-A337-4E63-88D0-244DAB14E721}
+		{422E8826-95A2-407D-B078-0D45FC549384} = {8B93824E-4EB0-4967-BAC7-8E31ED6CB0B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2307B5F1-8D25-49B2-BBFB-B5E7F1A22958}

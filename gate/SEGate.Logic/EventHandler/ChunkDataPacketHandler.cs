@@ -1,11 +1,11 @@
-﻿using CraftAI.Gate.Service;
-using SEGate.Interface.Types;
-using SEGate.Logic.Abstractions;
-using SEGate.Logic.LLAPI.Play.Clientbound;
-using SEGate.Logic.Registry;
+﻿using CraftAI.Gate.Interface.Types;
+using CraftAI.Gate.Logic.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Play.Clientbound;
+using CraftAI.Gate.Logic.Registry;
+using CraftAI.Gate.Service;
 using System.IO;
 
-namespace SEGate.Logic.EventHandler
+namespace CraftAI.Gate.Logic.EventHandler
 {
 	public class ChunkDataPacketHandler : IEventHandler<ChunkDataPacket>
 	{

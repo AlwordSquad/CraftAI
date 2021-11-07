@@ -1,5 +1,5 @@
-﻿using SEGate.Logic.Abstractions;
-using SEGate.Logic.EventHandler;
+﻿using CraftAI.Gate.Logic.Abstractions;
+using CraftAI.Gate.Logic.EventHandler;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -31,7 +31,7 @@ namespace SEGate.Logic.Tests
 		IEventHandler[] IEventHandlersCollection.EventHandlers => new IEventHandler[]
 		{
 			new KeepAliveEventHandler(),
-			new ChunkDataPacketHandler(),
+			// new ChunkDataPacketHandler(),
 		};
 	}
 }

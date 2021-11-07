@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SEGate.Logic.LLAPI.Attributes
+namespace CraftAI.Gate.Logic.LLAPI.Attributes
 {
 	/// <summary>
 	/// Minecraft packet for <see cref="ushort"/>

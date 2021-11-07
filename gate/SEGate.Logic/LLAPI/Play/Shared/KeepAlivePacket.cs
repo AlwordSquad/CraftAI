@@ -1,6 +1,8 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+
 // https://wiki.vg/Protocol#Keep_Alive_.28clientbound.29
-namespace SEGate.Logic.LLAPI.Play.Shared
+namespace CraftAI.Gate.Logic.LLAPI.Play.Shared
 {
 
 	/// <summary>

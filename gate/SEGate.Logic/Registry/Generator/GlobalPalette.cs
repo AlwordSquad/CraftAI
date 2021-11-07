@@ -1,8 +1,7 @@
-﻿using SEGate.Logic.Utils;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CraftAI.Gate.Logic.Utils;
 
-
-namespace SEGate.Logic.Registry.Generator
+namespace CraftAI.Gate.Logic.Registry.Generator
 {
 	public static class GlobalPalette
 	{

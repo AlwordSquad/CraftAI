@@ -21,8 +21,4 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Bost.BOT\Bost.Agent.csproj" />
-  </ItemGroup>
-
 </Project>

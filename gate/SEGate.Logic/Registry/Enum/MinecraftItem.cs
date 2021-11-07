@@ -1,4 +1,4 @@
-﻿namespace SEGate.Logic.Registry.Enum
+﻿namespace CraftAI.Gate.Logic.Registry.Enum
 {
 	public enum MinecraftItem
 	{

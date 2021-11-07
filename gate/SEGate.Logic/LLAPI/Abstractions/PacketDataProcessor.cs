@@ -1,10 +1,10 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 
-namespace SEGate.Logic.LLAPI
+namespace CraftAI.Gate.Logic.LLAPI.Abstractions
 {
 	public abstract class PacketDataProcessor
 	{

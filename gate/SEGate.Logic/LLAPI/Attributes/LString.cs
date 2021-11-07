@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace SEGate.Logic.LLAPI.Attributes
+namespace CraftAI.Gate.Logic.LLAPI.Attributes
 {
 	/// <summary>
 	/// Minecraft packet for <see cref="string"/>

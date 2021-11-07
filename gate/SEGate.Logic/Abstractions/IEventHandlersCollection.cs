@@ -1,4 +1,4 @@
-﻿namespace SEGate.Logic.Abstractions
+﻿namespace CraftAI.Gate.Logic.Abstractions
 {
 	public interface IEventHandlersCollection
 	{

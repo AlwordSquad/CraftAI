@@ -1,9 +1,9 @@
-﻿using SEGate.Logic.LLAPI;
-using SEGate.Logic.LLAPI.Attributes;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 
-namespace SEGate.Logic
+namespace CraftAI.Gate.Logic.LLAPI
 {
 	public class PacketDataBuilder : PacketDataProcessor
 	{

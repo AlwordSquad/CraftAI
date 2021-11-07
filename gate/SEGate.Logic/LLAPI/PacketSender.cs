@@ -1,9 +1,9 @@
-﻿using SEGate.Logic.LLAPI.Abstractions;
-using SEGate.Logic.LLAPI.Attributes;
-using System.IO;
+﻿using System.IO;
 using System.Net.Sockets;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 
-namespace SEGate.Logic.LLAPI
+namespace CraftAI.Gate.Logic.LLAPI
 {
 	public class PacketSender : IPacketSender
 	{

@@ -1,11 +1,11 @@
-﻿using SEGate.Logic.LLAPI.Abstractions;
-using SEGate.Logic.LLAPI.Play.Clientbound;
-using SEGate.Logic.LLAPI.Play.Shared;
-using SEGate.Logic.LLAPI.Stub;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Play.Clientbound;
+using CraftAI.Gate.Logic.LLAPI.Play.Shared;
+using CraftAI.Gate.Logic.LLAPI.Stub;
 using System;
 using System.Collections.Generic;
 
-namespace SEGate.Logic.LLAPI.Play
+namespace CraftAI.Gate.Logic.LLAPI.Play
 {
 	public class PlayClientMapper : IClientboundPacketMapping
 	{

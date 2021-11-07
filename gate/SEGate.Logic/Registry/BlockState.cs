@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SEGate.Logic.Registry
+namespace CraftAI.Gate.Logic.Registry
 {
 	public class BlockState
 	{

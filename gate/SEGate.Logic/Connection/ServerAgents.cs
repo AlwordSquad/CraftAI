@@ -1,8 +1,8 @@
-﻿using SEGate.Logic.Abstractions;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using CraftAI.Gate.Logic.Abstractions;
 
-namespace SEGate.Logic.Connection
+namespace CraftAI.Gate.Logic.Connection
 {
 	public class ServerAgents
 	{

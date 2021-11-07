@@ -1,6 +1,6 @@
-﻿using SEGate.Logic.Registry.Generator;
+﻿using CraftAI.Gate.Logic.Registry.Generator;
 
-namespace SEGate.Logic.Registry
+namespace CraftAI.Gate.Logic.Registry
 {
 	public record BlockId
 	{

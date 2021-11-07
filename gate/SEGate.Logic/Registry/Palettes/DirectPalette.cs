@@ -1,8 +1,8 @@
-﻿using SEGate.Logic.Registry.Generator;
-using System;
+﻿using System;
 using System.IO;
+using CraftAI.Gate.Logic.Registry.Generator;
 
-namespace SEGate.Logic.Registry.Palettes
+namespace CraftAI.Gate.Logic.Registry.Palettes
 {
 	public class DirectPalette : IPalette
 	{

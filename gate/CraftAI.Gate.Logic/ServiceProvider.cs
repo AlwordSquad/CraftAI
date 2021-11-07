@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CraftAI.Gate.Logic
+namespace CraftAI.Gate.Features
 {
 	public static class ServiceProvider
 	{
