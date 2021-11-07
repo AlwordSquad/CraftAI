@@ -16,7 +16,7 @@ namespace CraftAI.Gate.Logic.LLAPI.Play.Clientbound
 		/// <summary>Player's EID.</summary>
 		[LVarint] public int EntityID { get; set; }
 		/// <summary>See on link for notes on offline mode and NPCs.</summary>
-		[LUUID] public int PlayerUUID { get; set; }
+		[LUUID] public string PlayerUUID { get; set; }
 		[LDouble] public double X { get; set; }
 		[LDouble] public double Y { get; set; }
 		[LDouble] public double Z { get; set; }

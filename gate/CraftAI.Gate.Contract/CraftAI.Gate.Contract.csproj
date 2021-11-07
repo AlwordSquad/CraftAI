@@ -8,6 +8,7 @@
     <None Remove="craftai.entity.chunkdata.proto" />
     <None Remove="craftai.entity.connect.proto" />
     <None Remove="craftai.entity.proto" />
+    <None Remove="craftai.entity.spawndata.proto" />
     <None Remove="craftai.play.clientbound.proto" />
     <None Remove="craftai.play.serverbound.proto" />
     <None Remove="greet.proto" />
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="craftai.entity.spawndata.proto" GrpcServices="Both" />
     <Protobuf Include="craftai.entity.connect.proto" GrpcServices="Both" />
     <Protobuf Include="craftai.entity.proto" GrpcServices="Both" />
     <Protobuf Include="craftai.entity.chunkdata.proto" GrpcServices="Both" />

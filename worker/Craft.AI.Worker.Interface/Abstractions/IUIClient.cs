@@ -2,7 +2,7 @@
 
 namespace Craft.AI.Worker.Interface.Abstractions
 {
-	public interface ISender
+	public interface IUIClient
 	{
 		string Id { get; }
 

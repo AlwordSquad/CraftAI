@@ -12,7 +12,8 @@ namespace CraftAI.Gate.Logic.LLAPI.Play
 		private readonly Dictionary<int, Type> _packetType = new()
 		{
 			{ 0x21, typeof(KeepAlivePacket) },
-			{ 0x22, typeof(ChunkDataPacket) },
+			// { 0x22, typeof(ChunkDataPacket) },
+			{ 0x04, typeof(SpawnPlayerPacket) },
 		};
 		public Type TypeFromPacketId(int packetId)
 		{

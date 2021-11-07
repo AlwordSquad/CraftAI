@@ -12,6 +12,7 @@ namespace Craft.AI.Worker.Interface
 		{
 			{ 1, typeof(PingPacket) },
 			{ 2, typeof(SetChunkRenderCommand) },
+			{ 3, typeof(SetPlayerSpawnDataCommand) },
 		};
 
 		public static readonly IReadOnlyDictionary<Type, byte> Bytes = Types.ToDictionary(e => e.Value, e => e.Key);

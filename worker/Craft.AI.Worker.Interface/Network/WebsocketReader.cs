@@ -10,14 +10,14 @@ namespace Craft.AI.Worker.Interface
 		private const int NoData = 0;
 
 		private readonly Queue<byte> _queue = new Queue<byte>(4 * 1024);
-		private readonly ISender _sender;
+		private readonly IUIClient _sender;
 		private readonly IReadOnlyDictionary<byte, Type> _mapping;
 		private readonly IEventHub _eventHub;
 		private uint _nextPacketLength = NoData;
 		private byte _nextPacketKey = NoData;
 		private byte _packetMetaSize = sizeof(int) + 1;
 		public WebsocketReader(
-			ISender sender,
+			IUIClient sender,
 			IReadOnlyDictionary<byte, Type> mapping,
 			IEventHub eventHub)
 		{

@@ -13,5 +13,8 @@ namespace CraftAI.Worker.Service.Services
 
 		public override Task<Void> ChunkData(Chunk16x16x16 request, ServerCallContext context)
 			=> _mediator.Send(new BaseRequest<Chunk16x16x16, Void>(request));
+
+		public override Task<Void> SpawnPlayer(SpawnPlayer request, ServerCallContext context)
+			=> _mediator.Send(new BaseRequest<SpawnPlayer, Void>(request));
 	}
 }

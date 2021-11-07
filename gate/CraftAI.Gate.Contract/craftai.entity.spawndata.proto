@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "CraftAI.Gate.Service";
+package craftai.entity;
+// The greeting service definition.
+message SpawnPlayer {
+	int32 entityId = 1;
+	string playerUUID = 2;
+	double x = 3;
+	double y = 4;
+	double z = 5;
+	int32 yaw = 6;
+	int32 pitch = 7;
+}
