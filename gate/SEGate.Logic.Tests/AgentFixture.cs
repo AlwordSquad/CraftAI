@@ -31,7 +31,6 @@ namespace SEGate.Logic.Tests
 		IEventHandler[] IEventHandlersCollection.EventHandlers => new IEventHandler[]
 		{
 			new KeepAliveEventHandler(),
-			new ChunkDataPacketHandler(),
 		};
 	}
 }

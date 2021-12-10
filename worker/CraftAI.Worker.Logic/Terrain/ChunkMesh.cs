@@ -18,14 +18,14 @@ namespace CraftAI.Worker.Logic.Terrain
 		private readonly List<Int3> _vertices = new();
 		private readonly List<int> _triangles = new();
 		private readonly List<Float2> _uvs = new();
-		private readonly byte[,,] _voxelMap = new byte[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
+		private readonly int[,,] _voxelMap = new int[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
 
 		public ChunkCoord Coord { get; }
 		public bool IsActive { get; set; }
 		public bool isVoxelMapPopulated = false;
 
 		private int _vertexIndex = 0;
-		public ChunkMesh(ChunkCoord _coord, World world, byte[,,]? voxelMap = null)
+		public ChunkMesh(ChunkCoord _coord, World world, int[,,]? voxelMap = null)
 		{
 			Coord = _coord;
 			_world = world;
@@ -55,7 +55,10 @@ namespace CraftAI.Worker.Logic.Terrain
 		public Int3 WorldPosition => new(Coord.WorldX, 0, Coord.WorldZ);
 		bool IsVoxelInChunk(int x, int y, int z)
 		{
-			if (x < 0 || x > VoxelData.ChunkWidth - 1 || y < 0 || y > VoxelData.ChunkHeight - 1 || z < 0 || z > VoxelData.ChunkWidth - 1)
+			if (
+				x < 0 || x > VoxelData.ChunkWidth - 1 ||
+				y < 0 || y > VoxelData.ChunkHeight - 1 ||
+				z < 0 || z > VoxelData.ChunkWidth - 1)
 				return false;
 			else
 				return true;
@@ -64,10 +67,11 @@ namespace CraftAI.Worker.Logic.Terrain
 		bool CheckVoxel(Int3 pos)
 		{
 			if (!IsVoxelInChunk(pos.X, pos.Y, pos.Z)) return _world.CheckForVoxel(pos + WorldPosition);
-			return _world.Blocktypes[_voxelMap[pos.X, pos.Y, pos.Z]].isSolid;
+#warning blockId is wrong
+			return _world.Blocktypes[_voxelMap[pos.X, pos.Y, pos.Z] % _world.Blocktypes.Length].isSolid;
 		}
 
-		public byte GetVoxelFromGlobalVector3(Int3 pos)
+		public int GetVoxelFromGlobalVector3(Int3 pos)
 		{
 			int xCheck = pos.X;
 			int yCheck = pos.Y;
@@ -82,7 +86,8 @@ namespace CraftAI.Worker.Logic.Terrain
 			for (int p = 0; p < 6; p++)
 			{
 				if (CheckVoxel(pos + VoxelData.faceChecks[p])) continue;
-				byte blockID = _voxelMap[pos.X, pos.Y, pos.Z];
+#warning blockId is wrong
+				int blockID = _voxelMap[pos.X, pos.Y, pos.Z] % _world.Blocktypes.Length;
 				if (!_world.Blocktypes[blockID].isSolid) continue;
 
 				_vertices.Add(pos + VoxelData.voxelVerts[VoxelData.voxelTris[p, 0]]);

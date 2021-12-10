@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj" />
-    <ProjectReference Include="..\SEGate.Logic\SEGate.Logic.csproj" />
+    <ProjectReference Include="..\SEGate.Logic\CraftAI.Gate.Logic.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿using CraftAI.Gate.Service;
+﻿using CraftAI.Worker.Logic.Storage;
 using CraftAI.Worker.Logic.Terrain;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace CraftAI.Worker.Logic.Services
 			if (!_map.ContainsKey(coord))
 			{
 				byte[] heightPaletter = new byte[] { 0, 1, 2, 3, 4, 5 };
-				byte[,,] _voxelMap = new byte[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
+				int[,,] _voxelMap = new int[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
 				for (int x = 0; x < VoxelData.ChunkWidth; x++)
 				{
 					for (int y = 0; y < VoxelData.ChunkHeight - 1; y++)
@@ -33,7 +33,7 @@ namespace CraftAI.Worker.Logic.Services
 			return new ValueTask<ChunkMesh>(_map[coord]);
 		}
 
-		public ValueTask Set(Chunk16x16x16 chunk)
+		public ValueTask Set(ChunkDocument chunk)
 		{
 			throw new NotImplementedException();
 		}

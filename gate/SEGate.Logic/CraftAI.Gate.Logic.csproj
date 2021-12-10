@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj" />
-    <ProjectReference Include="..\SEGate.Interface\SEGate.Interface.csproj" />
+    <ProjectReference Include="..\SEGate.Interface\CraftAI.Gate.Interface.csproj" />
   </ItemGroup>
 
   <ItemGroup>
