@@ -67,7 +67,12 @@ namespace CraftAI.Worker.Logic.Terrain
 		bool CheckVoxel(Int3 pos)
 		{
 			if (!IsVoxelInChunk(pos.X, pos.Y, pos.Z)) return _world.CheckForVoxel(pos + WorldPosition);
+<<<<<<< HEAD
+#warning blockId is wrong
+			return _world.Blocktypes[_voxelMap[pos.X, pos.Y, pos.Z] % _world.Blocktypes.Length].isSolid;
+=======
 			return _world._textures.Get(_voxelMap[pos.X, pos.Y, pos.Z]).isSolid;
+>>>>>>> af32b0cb5c329dfafa204ac3eddb57b51d274ebc
 		}
 
 		public int GetVoxelFromGlobalVector3(Int3 pos)
@@ -85,8 +90,14 @@ namespace CraftAI.Worker.Logic.Terrain
 			for (int p = 0; p < 6; p++)
 			{
 				if (CheckVoxel(pos + VoxelData.faceChecks[p])) continue;
+<<<<<<< HEAD
+#warning blockId is wrong
+				int blockID = _voxelMap[pos.X, pos.Y, pos.Z] % _world.Blocktypes.Length;
+				if (!_world.Blocktypes[blockID].isSolid) continue;
+=======
 				int blockID = _voxelMap[pos.X, pos.Y, pos.Z];
 				if (!_world._textures.Get(blockID).isSolid) continue;
+>>>>>>> af32b0cb5c329dfafa204ac3eddb57b51d274ebc
 
 				_vertices.Add(pos + VoxelData.voxelVerts[VoxelData.voxelTris[p, 0]]);
 				_vertices.Add(pos + VoxelData.voxelVerts[VoxelData.voxelTris[p, 1]]);

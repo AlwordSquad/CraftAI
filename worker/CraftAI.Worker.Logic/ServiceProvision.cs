@@ -14,7 +14,14 @@ namespace CraftAI.Worker.Logic
 			services.AddMediatR(typeof(ServiceProvision));
 			services.AddSingleton<ITerrainService, TerrainMongoDb>();
 			services.AddSingleton<IEventHub, EventHandlerCollection>();
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 			services.AddSingleton<IUIClients, CraftAiClients>();
+>>>>>>> af32b0cb5c329dfafa204ac3eddb57b51d274ebc
+=======
+			services.AddSingleton<IUIClients, CraftAiClients>();
+>>>>>>> af32b0c (update client library)
 			services.AddAutoMapper(typeof(ServiceProvision));
 			EventHandlerCollection.Configure(services);
 			return services;
