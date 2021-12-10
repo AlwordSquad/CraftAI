@@ -49,19 +49,20 @@ namespace MessagePack.Resolvers
 
         static GeneratedResolverGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(11)
+            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(12)
             {
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.ChunkPosition[]), 0 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Float2[]), 1 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int3[]), 2 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Clientbound.SetChunkRenderCommand), 3 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Serverbound.CreateAgentRequest), 4 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Serverbound.TerrainRequest), 5 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.ChunkPosition), 6 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Float2), 7 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int2), 8 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int3), 9 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.PingPacket), 10 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommand), 4 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Serverbound.CreateAgentRequest), 5 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Serverbound.TerrainRequest), 6 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.ChunkPosition), 7 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Float2), 8 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int2), 9 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int3), 10 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Shared.PingPacket), 11 },
             };
         }
 
@@ -79,13 +80,14 @@ namespace MessagePack.Resolvers
                 case 1: return new global::MessagePack.Formatters.ArrayFormatter<global::Craft.AI.Worker.Interface.Network.Shared.Float2>();
                 case 2: return new global::MessagePack.Formatters.ArrayFormatter<global::Craft.AI.Worker.Interface.Network.Shared.Int3>();
                 case 3: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Clientbound.SetChunkRenderCommandFormatter();
-                case 4: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound.CreateAgentRequestFormatter();
-                case 5: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound.TerrainRequestFormatter();
-                case 6: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.ChunkPositionFormatter();
-                case 7: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Float2Formatter();
-                case 8: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int2Formatter();
-                case 9: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int3Formatter();
-                case 10: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.PingPacketFormatter();
+                case 4: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommandFormatter();
+                case 5: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound.CreateAgentRequestFormatter();
+                case 6: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound.TerrainRequestFormatter();
+                case 7: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.ChunkPositionFormatter();
+                case 8: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Float2Formatter();
+                case 9: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int2Formatter();
+                case 10: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int3Formatter();
+                case 11: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.PingPacketFormatter();
                 default: return null;
             }
         }
@@ -172,6 +174,77 @@ namespace MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Clientbound
                         break;
                     case 4:
                         ____result.Uvs = formatterResolver.GetFormatterWithVerify<global::Craft.AI.Worker.Interface.Network.Shared.Float2[]>().Deserialize(ref reader, options);
+                        break;
+                    default:
+                        reader.Skip();
+                        break;
+                }
+            }
+
+            reader.Depth--;
+            return ____result;
+        }
+    }
+
+    public sealed class SetPlayerSpawnDataCommandFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommand>
+    {
+
+        public void Serialize(ref global::MessagePack.MessagePackWriter writer, global::Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommand value, global::MessagePack.MessagePackSerializerOptions options)
+        {
+            if (value == null)
+            {
+                writer.WriteNil();
+                return;
+            }
+
+            global::MessagePack.IFormatterResolver formatterResolver = options.Resolver;
+            writer.WriteArrayHeader(8);
+            writer.WriteNil();
+            writer.Write(value.EntityId);
+            formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.PlayerUUUI, options);
+            writer.Write(value.X);
+            writer.Write(value.Y);
+            writer.Write(value.Z);
+            writer.Write(value.Yaw);
+            writer.Write(value.Pitch);
+        }
+
+        public global::Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommand Deserialize(ref global::MessagePack.MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
+        {
+            if (reader.TryReadNil())
+            {
+                return null;
+            }
+
+            options.Security.DepthStep(ref reader);
+            global::MessagePack.IFormatterResolver formatterResolver = options.Resolver;
+            var length = reader.ReadArrayHeader();
+            var ____result = new global::Craft.AI.Worker.Interface.Network.Clientbound.SetPlayerSpawnDataCommand();
+
+            for (int i = 0; i < length; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                        ____result.EntityId = reader.ReadInt32();
+                        break;
+                    case 2:
+                        ____result.PlayerUUUI = formatterResolver.GetFormatterWithVerify<string>().Deserialize(ref reader, options);
+                        break;
+                    case 3:
+                        ____result.X = reader.ReadDouble();
+                        break;
+                    case 4:
+                        ____result.Y = reader.ReadDouble();
+                        break;
+                    case 5:
+                        ____result.Z = reader.ReadDouble();
+                        break;
+                    case 6:
+                        ____result.Yaw = reader.ReadByte();
+                        break;
+                    case 7:
+                        ____result.Pitch = reader.ReadByte();
                         break;
                     default:
                         reader.Skip();

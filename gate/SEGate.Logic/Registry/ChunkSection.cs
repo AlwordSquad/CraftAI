@@ -1,8 +1,8 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
-using SEGate.Logic.Registry.Palettes;
-using System.IO;
+﻿using System.IO;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+using CraftAI.Gate.Logic.Registry.Palettes;
 
-namespace SEGate.Logic.Registry
+namespace CraftAI.Gate.Logic.Registry
 {
 	public class ChunkSection
 	{

@@ -1,5 +1,5 @@
 [
-  { 
+  {
     "blockName": "air",
     "isSolid": false,
     "backFaceTexture": 0,
@@ -12,111 +12,1040 @@
   {
     "blockName": "stone",
     "isSolid": true,
-    "backFaceTexture": 78,
-    "frontFaceTexture": 78,
-    "topFaceTexture": 78,
-    "bottomFaceTexture": 78,
-    "leftFaceTexture": 78,
-    "rightFaceTexture": 78
+    "backFaceTexture": 1504,
+    "frontFaceTexture": 1504,
+    "topFaceTexture": 1504,
+    "bottomFaceTexture": 1504,
+    "leftFaceTexture": 1504,
+    "rightFaceTexture": 1504
   },
-  { 
-    "blockName": "dirt",
+  {
+    "blockName": "granite",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 675,
+    "frontFaceTexture": 675,
+    "topFaceTexture": 675,
+    "bottomFaceTexture": 675,
+    "leftFaceTexture": 675,
+    "rightFaceTexture": 675
   },
-  { 
-    "blockName": "dirt",
+  {
+    "blockName": "polished_granite",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 1242,
+    "frontFaceTexture": 1242,
+    "topFaceTexture": 1242,
+    "bottomFaceTexture": 1242,
+    "leftFaceTexture": 1242,
+    "rightFaceTexture": 1242
+  },
+  {
+    "blockName": "diorite",
+    "isSolid": true,
+    "backFaceTexture": 347,
+    "frontFaceTexture": 347,
+    "topFaceTexture": 347,
+    "bottomFaceTexture": 347,
+    "leftFaceTexture": 347,
+    "rightFaceTexture": 347
+  },
+  {
+    "blockName": "polished_diorite",
+    "isSolid": true,
+    "backFaceTexture": 1241,
+    "frontFaceTexture": 1241,
+    "topFaceTexture": 1241,
+    "bottomFaceTexture": 1241,
+    "leftFaceTexture": 1241,
+    "rightFaceTexture": 1241
+  },
+  {
+    "blockName": "andesite",
+    "isSolid": true,
+    "backFaceTexture": 528,
+    "frontFaceTexture": 528,
+    "topFaceTexture": 528,
+    "bottomFaceTexture": 528,
+    "leftFaceTexture": 528,
+    "rightFaceTexture": 528
+  },
+  {
+    "blockName": "polished_andesite",
+    "isSolid": true,
+    "backFaceTexture": 1203,
+    "frontFaceTexture": 1203,
+    "topFaceTexture": 1203,
+    "bottomFaceTexture": 1203,
+    "leftFaceTexture": 1203,
+    "rightFaceTexture": 1203
+  },
+  {
+    "blockName": "grass_block",
+    "isSolid": true,
+    "backFaceTexture": 805,
+    "frontFaceTexture": 805,
+    "topFaceTexture": 741,
+    "bottomFaceTexture": 412,
+    "leftFaceTexture": 805,
+    "rightFaceTexture": 805
   },
   {
     "blockName": "dirt",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 412,
+    "frontFaceTexture": 412,
+    "topFaceTexture": 412,
+    "bottomFaceTexture": 412,
+    "leftFaceTexture": 412,
+    "rightFaceTexture": 412
   },
   {
-    "blockName": "dirt",
+    "blockName": "coarse_dirt",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 925,
+    "frontFaceTexture": 925,
+    "topFaceTexture": 925,
+    "bottomFaceTexture": 925,
+    "leftFaceTexture": 925,
+    "rightFaceTexture": 925
   },
   {
-    "blockName": "dirt",
+    "blockName": "podzol",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 1191,
+    "frontFaceTexture": 1191,
+    "topFaceTexture": 1192,
+    "bottomFaceTexture": 412,
+    "leftFaceTexture": 1191,
+    "rightFaceTexture": 1191
   },
   {
-    "blockName": "dirt",
+    "blockName": "cobblestone",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 927,
+    "frontFaceTexture": 927,
+    "topFaceTexture": 927,
+    "bottomFaceTexture": 927,
+    "leftFaceTexture": 927,
+    "rightFaceTexture": 927
   },
   {
-    "blockName": "dirt",
+    "blockName": "oak_planks",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 1119,
+    "frontFaceTexture": 1119,
+    "topFaceTexture": 1119,
+    "bottomFaceTexture": 1119,
+    "leftFaceTexture": 1119,
+    "rightFaceTexture": 1119
   },
   {
-    "blockName": "dirt",
+    "blockName": "spruce_planks",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 1501,
+    "frontFaceTexture": 1501,
+    "topFaceTexture": 1501,
+    "bottomFaceTexture": 1501,
+    "leftFaceTexture": 1501,
+    "rightFaceTexture": 1501
   },
   {
-    "blockName": "dirt",
+    "blockName": "birch_planks",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 407,
+    "frontFaceTexture": 407,
+    "topFaceTexture": 407,
+    "bottomFaceTexture": 407,
+    "leftFaceTexture": 407,
+    "rightFaceTexture": 407
   },
   {
-    "blockName": "dirt",
+    "blockName": "jungle_planks",
     "isSolid": true,
-    "backFaceTexture": 0,
-    "frontFaceTexture": 0,
-    "topFaceTexture": 0,
-    "bottomFaceTexture": 0,
-    "leftFaceTexture": 0,
-    "rightFaceTexture": 0
+    "backFaceTexture": 224,
+    "frontFaceTexture": 224,
+    "topFaceTexture": 224,
+    "bottomFaceTexture": 224,
+    "leftFaceTexture": 224,
+    "rightFaceTexture": 224
+  },
+  {
+    "blockName": "acacia_planks",
+    "isSolid": true,
+    "backFaceTexture": 337,
+    "frontFaceTexture": 337,
+    "topFaceTexture": 337,
+    "bottomFaceTexture": 337,
+    "leftFaceTexture": 337,
+    "rightFaceTexture": 337
+  },
+  {
+    "blockName": "dark_oak_planks",
+    "isSolid": true,
+    "backFaceTexture": 474,
+    "frontFaceTexture": 474,
+    "topFaceTexture": 474,
+    "bottomFaceTexture": 474,
+    "leftFaceTexture": 474,
+    "rightFaceTexture": 474
+  },
+  {
+    "blockName": "bedrock",
+    "isSolid": true,
+    "backFaceTexture": 14,
+    "frontFaceTexture": 14,
+    "topFaceTexture": 14,
+    "bottomFaceTexture": 14,
+    "leftFaceTexture": 14,
+    "rightFaceTexture": 14
+  },
+  {
+    "blockName": "water",
+    "isSolid": true,
+    "backFaceTexture": 269,
+    "frontFaceTexture": 269,
+    "topFaceTexture": 269,
+    "bottomFaceTexture": 269,
+    "leftFaceTexture": 269,
+    "rightFaceTexture": 269
+  },
+  {
+    "blockName": "lava",
+    "isSolid": true,
+    "backFaceTexture": 139,
+    "frontFaceTexture": 139,
+    "topFaceTexture": 139,
+    "bottomFaceTexture": 139,
+    "leftFaceTexture": 139,
+    "rightFaceTexture": 139
+  },
+  {
+    "blockName": "sand",
+    "isSolid": true,
+    "backFaceTexture": 1384,
+    "frontFaceTexture": 1384,
+    "topFaceTexture": 1384,
+    "bottomFaceTexture": 1384,
+    "leftFaceTexture": 1384,
+    "rightFaceTexture": 1384
+  },
+  {
+    "blockName": "red_sand",
+    "isSolid": true,
+    "backFaceTexture": 1315,
+    "frontFaceTexture": 1315,
+    "topFaceTexture": 1315,
+    "bottomFaceTexture": 1315,
+    "leftFaceTexture": 1315,
+    "rightFaceTexture": 1315
+  },
+  {
+    "blockName": "gravel",
+    "isSolid": true,
+    "backFaceTexture": 1065,
+    "frontFaceTexture": 1065,
+    "topFaceTexture": 1065,
+    "bottomFaceTexture": 1065,
+    "leftFaceTexture": 1065,
+    "rightFaceTexture": 1065
+  },
+  {
+    "blockName": "gold_ore",
+    "isSolid": true,
+    "backFaceTexture": 610,
+    "frontFaceTexture": 610,
+    "topFaceTexture": 610,
+    "bottomFaceTexture": 610,
+    "leftFaceTexture": 610,
+    "rightFaceTexture": 610
+  },
+  {
+    "blockName": "deepslate_gold_ore",
+    "isSolid": true,
+    "backFaceTexture": 151,
+    "frontFaceTexture": 151,
+    "topFaceTexture": 151,
+    "bottomFaceTexture": 151,
+    "leftFaceTexture": 151,
+    "rightFaceTexture": 151
+  },
+  {
+    "blockName": "iron_ore",
+    "isSolid": true,
+    "backFaceTexture": 353,
+    "frontFaceTexture": 353,
+    "topFaceTexture": 353,
+    "bottomFaceTexture": 353,
+    "leftFaceTexture": 353,
+    "rightFaceTexture": 353
+  },
+  {
+    "blockName": "deepslate_iron_ore",
+    "isSolid": true,
+    "backFaceTexture": 216,
+    "frontFaceTexture": 216,
+    "topFaceTexture": 216,
+    "bottomFaceTexture": 216,
+    "leftFaceTexture": 216,
+    "rightFaceTexture": 216
+  },
+  {
+    "blockName": "coal_ore",
+    "isSolid": true,
+    "backFaceTexture": 924,
+    "frontFaceTexture": 924,
+    "topFaceTexture": 924,
+    "bottomFaceTexture": 924,
+    "leftFaceTexture": 924,
+    "rightFaceTexture": 924
+  },
+  {
+    "blockName": "deepslate_coal_ore",
+    "isSolid": true,
+    "backFaceTexture": 995,
+    "frontFaceTexture": 995,
+    "topFaceTexture": 995,
+    "bottomFaceTexture": 995,
+    "leftFaceTexture": 995,
+    "rightFaceTexture": 995
+  },
+  {
+    "blockName": "nether_gold_ore",
+    "isSolid": true,
+    "backFaceTexture": 943,
+    "frontFaceTexture": 943,
+    "topFaceTexture": 943,
+    "bottomFaceTexture": 943,
+    "leftFaceTexture": 943,
+    "rightFaceTexture": 943
+  },
+  {
+    "blockName": "oak_log",
+    "isSolid": true,
+    "backFaceTexture": 1117,
+    "frontFaceTexture": 1117,
+    "topFaceTexture": 1118,
+    "bottomFaceTexture": 1118,
+    "leftFaceTexture": 1117,
+    "rightFaceTexture": 1117
+  },
+  {
+    "blockName": "spruce_log",
+    "isSolid": true,
+    "backFaceTexture": 1499,
+    "frontFaceTexture": 1499,
+    "topFaceTexture": 1500,
+    "bottomFaceTexture": 1500,
+    "leftFaceTexture": 1499,
+    "rightFaceTexture": 1499
+  },
+  {
+    "blockName": "birch_log",
+    "isSolid": true,
+    "backFaceTexture": 277,
+    "frontFaceTexture": 277,
+    "topFaceTexture": 342,
+    "bottomFaceTexture": 342,
+    "leftFaceTexture": 277,
+    "rightFaceTexture": 277
+  },
+  {
+    "blockName": "jungle_log",
+    "isSolid": true,
+    "backFaceTexture": 94,
+    "frontFaceTexture": 94,
+    "topFaceTexture": 159,
+    "bottomFaceTexture": 159,
+    "leftFaceTexture": 94,
+    "rightFaceTexture": 94
+  },
+  {
+    "blockName": "acacia_log",
+    "isSolid": true,
+    "backFaceTexture": 466,
+    "frontFaceTexture": 466,
+    "topFaceTexture": 272,
+    "bottomFaceTexture": 272,
+    "leftFaceTexture": 466,
+    "rightFaceTexture": 466
+  },
+  {
+    "blockName": "dark_oak_log",
+    "isSolid": true,
+    "backFaceTexture": 344,
+    "frontFaceTexture": 344,
+    "topFaceTexture": 409,
+    "bottomFaceTexture": 409,
+    "leftFaceTexture": 344,
+    "rightFaceTexture": 344
+  },
+  {
+    "blockName": "stripped_spruce_log",
+    "isSolid": true,
+    "backFaceTexture": 1522,
+    "frontFaceTexture": 1522,
+    "topFaceTexture": 1523,
+    "bottomFaceTexture": 1523,
+    "leftFaceTexture": 1522,
+    "rightFaceTexture": 1522
+  },
+  {
+    "blockName": "stripped_birch_log",
+    "isSolid": true,
+    "backFaceTexture": 1512,
+    "frontFaceTexture": 1512,
+    "topFaceTexture": 1513,
+    "bottomFaceTexture": 1513,
+    "leftFaceTexture": 1512,
+    "rightFaceTexture": 1512
+  },
+  {
+    "blockName": "stripped_jungle_log",
+    "isSolid": true,
+    "backFaceTexture": 1518,
+    "frontFaceTexture": 1518,
+    "topFaceTexture": 1519,
+    "bottomFaceTexture": 1519,
+    "leftFaceTexture": 1518,
+    "rightFaceTexture": 1518
+  },
+  {
+    "blockName": "stripped_acacia_log",
+    "isSolid": true,
+    "backFaceTexture": 1510,
+    "frontFaceTexture": 1510,
+    "topFaceTexture": 1511,
+    "bottomFaceTexture": 1511,
+    "leftFaceTexture": 1510,
+    "rightFaceTexture": 1510
+  },
+  {
+    "blockName": "stripped_dark_oak_log",
+    "isSolid": true,
+    "backFaceTexture": 1516,
+    "frontFaceTexture": 1516,
+    "topFaceTexture": 1517,
+    "bottomFaceTexture": 1517,
+    "leftFaceTexture": 1516,
+    "rightFaceTexture": 1516
+  },
+  {
+    "blockName": "stripped_oak_log",
+    "isSolid": true,
+    "backFaceTexture": 1520,
+    "frontFaceTexture": 1520,
+    "topFaceTexture": 1521,
+    "bottomFaceTexture": 1521,
+    "leftFaceTexture": 1520,
+    "rightFaceTexture": 1520
+  },
+  {
+    "blockName": "oak_wood",
+    "isSolid": true,
+    "backFaceTexture": 1117,
+    "frontFaceTexture": 1117,
+    "topFaceTexture": 1117,
+    "bottomFaceTexture": 1117,
+    "leftFaceTexture": 1117,
+    "rightFaceTexture": 1117
+  },
+  {
+    "blockName": "spruce_wood",
+    "isSolid": true,
+    "backFaceTexture": 1499,
+    "frontFaceTexture": 1499,
+    "topFaceTexture": 1499,
+    "bottomFaceTexture": 1499,
+    "leftFaceTexture": 1499,
+    "rightFaceTexture": 1499
+  },
+  {
+    "blockName": "birch_wood",
+    "isSolid": true,
+    "backFaceTexture": 277,
+    "frontFaceTexture": 277,
+    "topFaceTexture": 277,
+    "bottomFaceTexture": 277,
+    "leftFaceTexture": 277,
+    "rightFaceTexture": 277
+  },
+  {
+    "blockName": "jungle_wood",
+    "isSolid": true,
+    "backFaceTexture": 94,
+    "frontFaceTexture": 94,
+    "topFaceTexture": 94,
+    "bottomFaceTexture": 94,
+    "leftFaceTexture": 94,
+    "rightFaceTexture": 94
+  },
+  {
+    "blockName": "acacia_wood",
+    "isSolid": true,
+    "backFaceTexture": 466,
+    "frontFaceTexture": 466,
+    "topFaceTexture": 466,
+    "bottomFaceTexture": 466,
+    "leftFaceTexture": 466,
+    "rightFaceTexture": 466
+  },
+  {
+    "blockName": "dark_oak_wood",
+    "isSolid": true,
+    "backFaceTexture": 344,
+    "frontFaceTexture": 344,
+    "topFaceTexture": 344,
+    "bottomFaceTexture": 344,
+    "leftFaceTexture": 344,
+    "rightFaceTexture": 344
+  },
+  {
+    "blockName": "stripped_oak_wood",
+    "isSolid": true,
+    "backFaceTexture": 1520,
+    "frontFaceTexture": 1520,
+    "topFaceTexture": 1520,
+    "bottomFaceTexture": 1520,
+    "leftFaceTexture": 1520,
+    "rightFaceTexture": 1520
+  },
+  {
+    "blockName": "stripped_spruce_wood",
+    "isSolid": true,
+    "backFaceTexture": 1522,
+    "frontFaceTexture": 1522,
+    "topFaceTexture": 1522,
+    "bottomFaceTexture": 1522,
+    "leftFaceTexture": 1522,
+    "rightFaceTexture": 1522
+  },
+  {
+    "blockName": "stripped_birch_wood",
+    "isSolid": true,
+    "backFaceTexture": 1512,
+    "frontFaceTexture": 1512,
+    "topFaceTexture": 1512,
+    "bottomFaceTexture": 1512,
+    "leftFaceTexture": 1512,
+    "rightFaceTexture": 1512
+  },
+  {
+    "blockName": "stripped_jungle_wood",
+    "isSolid": true,
+    "backFaceTexture": 1518,
+    "frontFaceTexture": 1518,
+    "topFaceTexture": 1518,
+    "bottomFaceTexture": 1518,
+    "leftFaceTexture": 1518,
+    "rightFaceTexture": 1518
+  },
+  {
+    "blockName": "stripped_acacia_wood",
+    "isSolid": true,
+    "backFaceTexture": 1510,
+    "frontFaceTexture": 1510,
+    "topFaceTexture": 1510,
+    "bottomFaceTexture": 1510,
+    "leftFaceTexture": 1510,
+    "rightFaceTexture": 1510
+  },
+  {
+    "blockName": "stripped_dark_oak_wood",
+    "isSolid": true,
+    "backFaceTexture": 1516,
+    "frontFaceTexture": 1516,
+    "topFaceTexture": 1516,
+    "bottomFaceTexture": 1516,
+    "leftFaceTexture": 1516,
+    "rightFaceTexture": 1516
+  },
+  {
+    "blockName": "oak_leaves",
+    "isSolid": true,
+    "backFaceTexture": 1116,
+    "frontFaceTexture": 1116,
+    "topFaceTexture": 1116,
+    "bottomFaceTexture": 1116,
+    "leftFaceTexture": 1116,
+    "rightFaceTexture": 1116
+  },
+  {
+    "blockName": "spruce_leaves",
+    "isSolid": true,
+    "backFaceTexture": 1498,
+    "frontFaceTexture": 1498,
+    "topFaceTexture": 1498,
+    "bottomFaceTexture": 1498,
+    "leftFaceTexture": 1498,
+    "rightFaceTexture": 1498
+  },
+  {
+    "blockName": "birch_leaves",
+    "isSolid": true,
+    "backFaceTexture": 212,
+    "frontFaceTexture": 212,
+    "topFaceTexture": 212,
+    "bottomFaceTexture": 212,
+    "leftFaceTexture": 212,
+    "rightFaceTexture": 212
+  },
+  {
+    "blockName": "jungle_leaves",
+    "isSolid": true,
+    "backFaceTexture": 28,
+    "frontFaceTexture": 28,
+    "topFaceTexture": 28,
+    "bottomFaceTexture": 28,
+    "leftFaceTexture": 28,
+    "rightFaceTexture": 28
+  },
+  {
+    "blockName": "acacia_leaves",
+    "isSolid": true,
+    "backFaceTexture": 401,
+    "frontFaceTexture": 401,
+    "topFaceTexture": 401,
+    "bottomFaceTexture": 401,
+    "leftFaceTexture": 401,
+    "rightFaceTexture": 401
+  },
+  {
+    "blockName": "dark_oak_leaves",
+    "isSolid": true,
+    "backFaceTexture": 279,
+    "frontFaceTexture": 279,
+    "topFaceTexture": 279,
+    "bottomFaceTexture": 279,
+    "leftFaceTexture": 279,
+    "rightFaceTexture": 279
+  },
+  {
+    "blockName": "sponge",
+    "isSolid": true,
+    "backFaceTexture": 1461,
+    "frontFaceTexture": 1461,
+    "topFaceTexture": 1461,
+    "bottomFaceTexture": 1461,
+    "leftFaceTexture": 1461,
+    "rightFaceTexture": 1461
+  },
+  {
+    "blockName": "wet_sponge",
+    "isSolid": true,
+    "backFaceTexture": 1646,
+    "frontFaceTexture": 1646,
+    "topFaceTexture": 1646,
+    "bottomFaceTexture": 1646,
+    "leftFaceTexture": 1646,
+    "rightFaceTexture": 1646
+  },
+  {
+    "blockName": "glass",
+    "isSolid": true,
+    "backFaceTexture": 220,
+    "frontFaceTexture": 220,
+    "topFaceTexture": 220,
+    "bottomFaceTexture": 220,
+    "leftFaceTexture": 220,
+    "rightFaceTexture": 220
+  },
+  {
+    "blockName": "lapis_ore",
+    "isSolid": true,
+    "backFaceTexture": 744,
+    "frontFaceTexture": 744,
+    "topFaceTexture": 744,
+    "bottomFaceTexture": 744,
+    "leftFaceTexture": 744,
+    "rightFaceTexture": 744
+  },
+  {
+    "blockName": "deepslate_lapis_ore",
+    "isSolid": true,
+    "backFaceTexture": 281,
+    "frontFaceTexture": 281,
+    "topFaceTexture": 281,
+    "bottomFaceTexture": 281,
+    "leftFaceTexture": 281,
+    "rightFaceTexture": 281
+  },
+  {
+    "blockName": "lapis_block",
+    "isSolid": true,
+    "backFaceTexture": 679,
+    "frontFaceTexture": 679,
+    "topFaceTexture": 679,
+    "bottomFaceTexture": 679,
+    "leftFaceTexture": 679,
+    "rightFaceTexture": 679
+  },
+  {
+    "blockName": "dispenser",
+    "isSolid": true,
+    "backFaceTexture": 24,
+    "frontFaceTexture": 607,
+    "topFaceTexture": 90,
+    "bottomFaceTexture": 90,
+    "leftFaceTexture": 24,
+    "rightFaceTexture": 24
+  },
+  {
+    "blockName": "sandstone",
+    "isSolid": true,
+    "backFaceTexture": 1385,
+    "frontFaceTexture": 1385,
+    "topFaceTexture": 1387,
+    "bottomFaceTexture": 1386,
+    "leftFaceTexture": 1385,
+    "rightFaceTexture": 1385
+  },
+  {
+    "blockName": "chiseled_sandstone",
+    "isSolid": true,
+    "backFaceTexture": 917,
+    "frontFaceTexture": 917,
+    "topFaceTexture": 1387,
+    "bottomFaceTexture": 1386,
+    "leftFaceTexture": 917,
+    "rightFaceTexture": 917
+  },
+  {
+    "blockName": "note_block",
+    "isSolid": true,
+    "backFaceTexture": 873,
+    "frontFaceTexture": 873,
+    "topFaceTexture": 873,
+    "bottomFaceTexture": 873,
+    "leftFaceTexture": 873,
+    "rightFaceTexture": 873
+  },
+  {
+    "blockName": "white_wool",
+    "isSolid": true,
+    "backFaceTexture": 1696,
+    "frontFaceTexture": 1696,
+    "topFaceTexture": 1696,
+    "bottomFaceTexture": 1696,
+    "leftFaceTexture": 1696,
+    "rightFaceTexture": 1696
+  },
+  {
+    "blockName": "magenta_wool",
+    "isSolid": true,
+    "backFaceTexture": 32,
+    "frontFaceTexture": 32,
+    "topFaceTexture": 32,
+    "bottomFaceTexture": 32,
+    "leftFaceTexture": 32,
+    "rightFaceTexture": 32
+  },
+  {
+    "blockName": "light_blue_wool",
+    "isSolid": true,
+    "backFaceTexture": 81,
+    "frontFaceTexture": 81,
+    "topFaceTexture": 81,
+    "bottomFaceTexture": 81,
+    "leftFaceTexture": 81,
+    "rightFaceTexture": 81
+  },
+  {
+    "blockName": "yellow_wool",
+    "isSolid": true,
+    "backFaceTexture": 1706,
+    "frontFaceTexture": 1706,
+    "topFaceTexture": 1706,
+    "bottomFaceTexture": 1706,
+    "leftFaceTexture": 1706,
+    "rightFaceTexture": 1706
+  },
+  {
+    "blockName": "lime_wool",
+    "isSolid": true,
+    "backFaceTexture": 162,
+    "frontFaceTexture": 162,
+    "topFaceTexture": 162,
+    "bottomFaceTexture": 162,
+    "leftFaceTexture": 162,
+    "rightFaceTexture": 162
+  },
+  {
+    "blockName": "copper_ore",
+    "isSolid": true,
+    "backFaceTexture": 1047,
+    "frontFaceTexture": 1047,
+    "topFaceTexture": 1047,
+    "bottomFaceTexture": 1047,
+    "leftFaceTexture": 1047,
+    "rightFaceTexture": 1047
+  },
+  {
+    "blockName": "crafting_table",
+    "isSolid": true,
+    "backFaceTexture": 1049,
+    "frontFaceTexture": 1049,
+    "topFaceTexture": 1050,
+    "bottomFaceTexture": 1119,
+    "leftFaceTexture": 1048,
+    "rightFaceTexture": 1048
+  },
+  {
+    "blockName": "diamond_ore",
+    "isSolid": true,
+    "backFaceTexture": 282,
+    "frontFaceTexture": 282,
+    "topFaceTexture": 282,
+    "bottomFaceTexture": 282,
+    "leftFaceTexture": 282,
+    "rightFaceTexture": 282
+  },
+
+  {
+    "blockName": "diamond_block",
+    "isSolid": true,
+    "backFaceTexture": 217,
+    "frontFaceTexture": 217,
+    "topFaceTexture": 217,
+    "bottomFaceTexture": 217,
+    "leftFaceTexture": 217,
+    "rightFaceTexture": 217
+  },
+
+  {
+    "blockName": "deepslate_diamond_ore",
+    "isSolid": true,
+    "backFaceTexture": 20,
+    "frontFaceTexture": 20,
+    "topFaceTexture": 20,
+    "bottomFaceTexture": 20,
+    "leftFaceTexture": 20,
+    "rightFaceTexture": 20
+  },
+
+  {
+    "blockName": "spawner",
+    "isSolid": true,
+    "backFaceTexture": 1460,
+    "frontFaceTexture": 1460,
+    "topFaceTexture": 1460,
+    "bottomFaceTexture": 1460,
+    "leftFaceTexture": 1460,
+    "rightFaceTexture": 1460
+  },
+
+  {
+    "blockName": "obsidian",
+    "isSolid": true,
+    "backFaceTexture": 1127,
+    "frontFaceTexture": 1127,
+    "topFaceTexture": 1127,
+    "bottomFaceTexture": 1127,
+    "leftFaceTexture": 1127,
+    "rightFaceTexture": 1127
+  },
+
+  {
+    "blockName": "tnt",
+    "isSolid": true,
+    "backFaceTexture": 1581,
+    "frontFaceTexture": 1581,
+    "topFaceTexture": 1582,
+    "bottomFaceTexture": 1580,
+    "leftFaceTexture": 1581,
+    "rightFaceTexture": 1581
+  },
+
+  {
+    "blockName": "bookshelf",
+    "isSolid": true,
+    "backFaceTexture": 662,
+    "frontFaceTexture": 662,
+    "topFaceTexture": 1119,
+    "bottomFaceTexture": 1119,
+    "leftFaceTexture": 662,
+    "rightFaceTexture": 662
+  },
+
+  {
+    "blockName": "mossy_cobblestone",
+    "isSolid": true,
+    "backFaceTexture": 488,
+    "frontFaceTexture": 488,
+    "topFaceTexture": 488,
+    "bottomFaceTexture": 488,
+    "leftFaceTexture": 488,
+    "rightFaceTexture": 488
+  },
+
+  {
+    "blockName": "furnace",
+    "isSolid": true,
+    "backFaceTexture": 24,
+    "frontFaceTexture": 999,
+    "topFaceTexture": 90,
+    "bottomFaceTexture": 90,
+    "leftFaceTexture": 24,
+    "rightFaceTexture": 24
+  },
+
+  {
+    "blockName": "gold_block",
+    "isSolid": true,
+    "backFaceTexture": 545,
+    "frontFaceTexture": 545,
+    "topFaceTexture": 545,
+    "bottomFaceTexture": 545,
+    "leftFaceTexture": 545,
+    "rightFaceTexture": 545
+  },
+
+  {
+    "blockName": "blast_furnace",
+    "isSolid": true,
+    "backFaceTexture": 24,
+    "frontFaceTexture": 1064,
+    "topFaceTexture": 90,
+    "bottomFaceTexture": 90,
+    "leftFaceTexture": 24,
+    "rightFaceTexture": 24
+  },
+
+  {
+    "blockName": "iron_block",
+    "isSolid": true,
+    "backFaceTexture": 158,
+    "frontFaceTexture": 158,
+    "topFaceTexture": 158,
+    "bottomFaceTexture": 158,
+    "leftFaceTexture": 158,
+    "rightFaceTexture": 158
+  },
+
+  {
+    "blockName": "bricks",
+    "isSolid": true,
+    "backFaceTexture": 716,
+    "frontFaceTexture": 716,
+    "topFaceTexture": 716,
+    "bottomFaceTexture": 716,
+    "leftFaceTexture": 716,
+    "rightFaceTexture": 716
+  },
+
+  {
+    "blockName": "redstone_ore",
+    "isSolid": true,
+    "backFaceTexture": 1332,
+    "frontFaceTexture": 1332,
+    "topFaceTexture": 1332,
+    "bottomFaceTexture": 1332,
+    "leftFaceTexture": 1332,
+    "rightFaceTexture": 1332
+  },
+
+  {
+    "blockName": "deepslate_redstone_ore",
+    "isSolid": true,
+    "backFaceTexture": 346,
+    "frontFaceTexture": 346,
+    "topFaceTexture": 346,
+    "bottomFaceTexture": 346,
+    "leftFaceTexture": 346,
+    "rightFaceTexture": 346
+  },
+
+  {
+    "blockName": "pink_wool",
+    "isSolid": true,
+    "backFaceTexture": 1185,
+    "frontFaceTexture": 1185,
+    "topFaceTexture": 1185,
+    "bottomFaceTexture": 1185,
+    "leftFaceTexture": 1185,
+    "rightFaceTexture": 1185
+  },
+
+  {
+    "blockName": "gray_wool",
+    "isSolid": true,
+    "backFaceTexture": 546,
+    "frontFaceTexture": 546,
+    "topFaceTexture": 546,
+    "bottomFaceTexture": 546,
+    "leftFaceTexture": 546,
+    "rightFaceTexture": 546
+  },
+
+  {
+    "blockName": "light_gray_wool",
+    "isSolid": true,
+    "backFaceTexture": 291,
+    "frontFaceTexture": 291,
+    "topFaceTexture": 291,
+    "bottomFaceTexture": 291,
+    "leftFaceTexture": 291,
+    "rightFaceTexture": 291
+  },
+
+  {
+    "blockName": "red_wool",
+    "isSolid": true,
+    "backFaceTexture": 1324,
+    "frontFaceTexture": 1324,
+    "topFaceTexture": 1324,
+    "bottomFaceTexture": 1324,
+    "leftFaceTexture": 1324,
+    "rightFaceTexture": 1324
+  },
+
+  {
+    "blockName": "emerald_ore",
+    "isSolid": true,
+    "backFaceTexture": 153,
+    "frontFaceTexture": 153,
+    "topFaceTexture": 153,
+    "bottomFaceTexture": 153,
+    "leftFaceTexture": 153,
+    "rightFaceTexture": 153
+  },
+  {
+    "blockName": "deepslate_emerald_ore",
+    "isSolid": true,
+    "backFaceTexture": 86,
+    "frontFaceTexture": 86,
+    "topFaceTexture": 86,
+    "bottomFaceTexture": 86,
+    "leftFaceTexture": 86,
+    "rightFaceTexture": 86
+  },
+  {
+    "blockName": "ice",
+    "isSolid": true,
+    "backFaceTexture": 739,
+    "frontFaceTexture": 739,
+    "topFaceTexture": 739,
+    "bottomFaceTexture": 739,
+    "leftFaceTexture": 739,
+    "rightFaceTexture": 739
+  },
+  {
+    "blockName": "clay",
+    "isSolid": true,
+    "backFaceTexture": 922,
+    "frontFaceTexture": 922,
+    "topFaceTexture": 922,
+    "bottomFaceTexture": 922,
+    "leftFaceTexture": 922,
+    "rightFaceTexture": 922
+  },
+  {
+    "blockName": "pumpkin",
+    "isSolid": true,
+    "backFaceTexture": 1253,
+    "frontFaceTexture": 1253,
+    "topFaceTexture": 1255,
+    "bottomFaceTexture": 1253,
+    "leftFaceTexture": 1253,
+    "rightFaceTexture": 1253
   }
 ]

@@ -1,7 +1,8 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
-using SEGate.Logic.LLAPI.Enums;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+using CraftAI.Gate.Logic.LLAPI.Enums;
 
-namespace SEGate.Logic.LLAPI.Handshaking
+namespace CraftAI.Gate.Logic.LLAPI.Handshaking.Serverbound
 {
 	public record Handshake : IPacketData
 	{

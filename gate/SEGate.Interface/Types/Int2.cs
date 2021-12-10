@@ -1,4 +1,4 @@
-﻿namespace SEGate.Interface.Types
+﻿namespace CraftAI.Gate.Interface.Types
 {
 	public record Int2
 	{

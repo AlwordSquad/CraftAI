@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CraftAI.Worker.Logic.Client
 {
-	public class WebsocketSender : ISender
+	public class WebsocketSender : IUIClient
 	{
 		private readonly WebSocket _webSocket;
 		private static readonly PacketWriter packetWriter = new PacketWriter(ClientboundMapping.Bytes);

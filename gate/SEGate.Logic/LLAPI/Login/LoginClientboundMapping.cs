@@ -1,9 +1,9 @@
-﻿using SEGate.Logic.LLAPI.Abstractions;
-using SEGate.Logic.LLAPI.Login.Clientbound;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Login.Clientbound;
 using System;
 using System.Collections.Generic;
 
-namespace SEGate.Logic.LLAPI.Login
+namespace CraftAI.Gate.Logic.LLAPI.Login
 {
 	public class LoginClientboundMapping : IClientboundPacketMapping
 	{

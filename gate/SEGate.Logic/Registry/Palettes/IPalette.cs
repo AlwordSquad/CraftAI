@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace SEGate.Logic.Registry.Palettes
+namespace CraftAI.Gate.Logic.Registry.Palettes
 {
 	public interface IPalette
 	{

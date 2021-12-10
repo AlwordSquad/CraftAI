@@ -1,6 +1,7 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 
-namespace SEGate.Logic.LLAPI.Login.Clientbound
+namespace CraftAI.Gate.Logic.LLAPI.Login.Clientbound
 {
 	public record SetCompression : IPacketData
 	{

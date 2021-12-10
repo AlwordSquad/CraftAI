@@ -1,4 +1,4 @@
-﻿namespace SEGate.Logic.LLAPI.Enums
+﻿namespace CraftAI.Gate.Logic.LLAPI.Enums
 {
 	public enum NextState
 	{

@@ -1,8 +1,8 @@
-﻿using NbtLib;
-using System;
+﻿using System;
 using System.IO;
+using NbtLib;
 
-namespace SEGate.Logic.LLAPI.Attributes
+namespace CraftAI.Gate.Logic.LLAPI.Attributes
 {
 	class LNBT : LType
 	{

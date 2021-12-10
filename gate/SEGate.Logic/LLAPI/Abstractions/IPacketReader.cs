@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace SEGate.Logic.LLAPI.Abstractions
+namespace CraftAI.Gate.Logic.LLAPI.Abstractions
 {
 	public interface IPacketReader
 	{

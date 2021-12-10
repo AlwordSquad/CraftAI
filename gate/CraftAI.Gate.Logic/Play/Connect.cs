@@ -1,8 +1,8 @@
 ﻿using CraftAI.Gate.Features.Abstractions;
 using CraftAI.Gate.Service;
-using SEGate.Logic.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
+using CraftAI.Gate.Logic.Abstractions;
 
 namespace CraftAI.Gate.Features.Play
 {

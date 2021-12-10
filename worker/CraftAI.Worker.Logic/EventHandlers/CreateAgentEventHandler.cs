@@ -6,7 +6,7 @@ namespace CraftAI.Worker.Logic.EventHandlers
 {
 	class CreateAgentEventHandler : BaseEventHandler<CreateAgentRequest>
 	{
-		protected override Task Handle(ISender sender, CreateAgentRequest value)
+		protected override Task Handle(IUIClient sender, CreateAgentRequest value)
 		{
 			throw new System.NotImplementedException();
 		}

@@ -1,4 +1,4 @@
-﻿using SEGate.Logic.Connection;
+﻿using CraftAI.Gate.Logic.Connection;
 using Xunit;
 
 namespace SEGate.Logic.Tests.Connection

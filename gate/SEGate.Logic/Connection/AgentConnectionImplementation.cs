@@ -1,18 +1,18 @@
-﻿using SEGate.Logic.LLAPI;
-using SEGate.Logic.LLAPI.Abstractions;
-using SEGate.Logic.LLAPI.Attributes;
-using SEGate.Logic.LLAPI.Handshaking;
-using SEGate.Logic.LLAPI.Login;
-using SEGate.Logic.LLAPI.Login.Clientbound;
-using SEGate.Logic.LLAPI.Login.Serverbound;
-using SEGate.Logic.LLAPI.Play;
+﻿using CraftAI.Gate.Logic.LLAPI;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+using CraftAI.Gate.Logic.LLAPI.Handshaking.Serverbound;
+using CraftAI.Gate.Logic.LLAPI.Login;
+using CraftAI.Gate.Logic.LLAPI.Login.Clientbound;
+using CraftAI.Gate.Logic.LLAPI.Login.Serverbound;
+using CraftAI.Gate.Logic.LLAPI.Play;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Sockets;
 using System.Threading;
 
-namespace SEGate.Logic.Connection
+namespace CraftAI.Gate.Logic.Connection
 {
 	public sealed partial class AgentConnection
 	{

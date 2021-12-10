@@ -1,10 +1,10 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
-using SEGate.Logic.Registry.Generator;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+using CraftAI.Gate.Logic.Registry.Generator;
 
-namespace SEGate.Logic.Registry.Palettes
+namespace CraftAI.Gate.Logic.Registry.Palettes
 {
 	public class IndirectPalette : IPalette
 	{

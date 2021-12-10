@@ -1,8 +1,9 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace SEGate.Logic.LLAPI.Login.Clientbound
+namespace CraftAI.Gate.Logic.LLAPI.Login.Clientbound
 {
 	public record LoginSuccess : IPacketData
 	{

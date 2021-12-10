@@ -1,10 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using SEGate.Logic.Abstractions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CraftAI.Gate.Logic.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace SEGate.Logic.EventHandler
+namespace CraftAI.Gate.Logic.EventHandler.Collection
 {
 	public class EventHandlers : IEventHandlersCollection
 	{

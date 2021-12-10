@@ -1,7 +1,7 @@
-﻿using SEGate.Logic.Abstractions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CraftAI.Gate.Logic.Abstractions;
 
-namespace SEGate.Logic.Connection
+namespace CraftAI.Gate.Logic.Connection
 {
 	public class ServersHub : IServersHub
 	{

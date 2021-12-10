@@ -1,5 +1,5 @@
-﻿using SEGate.Logic.LLAPI.Attributes;
-using System.IO;
+﻿using System.IO;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
 using Xunit;
 
 namespace SEGate.Logic.Tests.LLAPI.Attributes

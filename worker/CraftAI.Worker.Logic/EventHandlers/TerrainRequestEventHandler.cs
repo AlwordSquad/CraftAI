@@ -14,7 +14,7 @@ namespace CraftAI.Worker.Logic.EventHandlers
 			_terrainService = terrainService;
 		}
 
-		protected override async Task Handle(ISender sender, TerrainRequest value)
+		protected override async Task Handle(IUIClient sender, TerrainRequest value)
 		{
 			foreach (var pos in value.Positions)
 			{

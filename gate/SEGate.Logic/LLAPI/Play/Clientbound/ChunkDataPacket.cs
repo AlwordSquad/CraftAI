@@ -1,7 +1,8 @@
-﻿using NbtLib;
-using SEGate.Logic.LLAPI.Attributes;
+﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
+using CraftAI.Gate.Logic.LLAPI.Attributes;
+using NbtLib;
 
-namespace SEGate.Logic.LLAPI.Play.Clientbound
+namespace CraftAI.Gate.Logic.LLAPI.Play.Clientbound
 {
 	public record ChunkDataPacket : IPacketData
 	{

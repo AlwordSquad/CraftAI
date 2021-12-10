@@ -1,7 +1,7 @@
-﻿using SEGate.Logic.LLAPI;
-using System;
+﻿using System;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
 
-namespace SEGate.Logic.Abstractions
+namespace CraftAI.Gate.Logic.Abstractions
 {
 	public interface IEventHandler
 	{

@@ -1,8 +1,8 @@
+using System.Threading.Tasks;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 
-namespace CraftAI.Gate.Service
+namespace CraftAI.Gate.Service.Services
 {
 	public class GreeterService : Greeter.GreeterBase
 	{

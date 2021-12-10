@@ -1,4 +1,5 @@
-﻿using CraftAI.Gate.Logic;
+﻿using CraftAI.Gate.Features;
+using CraftAI.Gate.Logic;
 using CraftAI.Gate.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,7 +7,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SEGate.Logic;
 
 namespace CraftAI.Gate.Service
 {

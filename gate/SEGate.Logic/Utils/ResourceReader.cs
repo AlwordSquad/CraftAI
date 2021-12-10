@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace SEGate.Logic.Utils
+namespace CraftAI.Gate.Logic.Utils
 {
 	public static class ResourceReader
 	{

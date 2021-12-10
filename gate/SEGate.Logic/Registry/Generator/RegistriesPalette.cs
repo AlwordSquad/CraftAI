@@ -1,10 +1,10 @@
-﻿using SEGate.Logic.Utils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using CraftAI.Gate.Logic.Utils;
 
-namespace SEGate.Logic.Registry.Generator
+namespace CraftAI.Gate.Logic.Registry.Generator
 {
 	public class RegistriesPalette
 	{
