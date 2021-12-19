@@ -15,7 +15,7 @@ namespace CraftAI.Worker.Logic.Client
 	public class CraftAiClients : IUIClients
 	{
 		private readonly Dictionary<string, IUIClient> _senders = new();
-		public string Add(IUIClient sender) { _senders.Add(sender.Id, sender); return sender.Id}
+		public string Add(IUIClient sender) { _senders.Add(sender.Id, sender); return sender.Id; }
 		public void Remove(string senderId) => _senders.Remove(senderId);
 		public IUIClient[] All() => _senders.Values.ToArray();
 		public void All(Action<IUIClient> action)
