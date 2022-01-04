@@ -1,10 +1,7 @@
-﻿namespace CraftAI.Worker.Logic.Services.Sandbox
+﻿using Craft.AI.Worker.Interface;
+
+namespace CraftAI.Worker.Logic.Services.Sandbox
 {
-	public interface ISandboxService
-	{
-
-	}
-
 	public class SandboxService : ISandboxService
 	{
 

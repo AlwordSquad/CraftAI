@@ -11,6 +11,5 @@ namespace CraftAI.Gate.Service.Services
 		public PlayServerbound(IMediator mediator) => _mediator = mediator;
 		public override Task<ConnectResponse> Connect(ConnectRequest request, ServerCallContext context)
 			=> _mediator.Send(new BaseRequest<ConnectRequest, ConnectResponse>(request));
-
 	}
 }

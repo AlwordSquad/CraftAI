@@ -22,7 +22,7 @@ namespace CraftAI.Gate.Service
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddGrpc();
-			services.AddSEGate();
+			services.AddCraftGate();
 			services.AddCraftAIFeatures();
 			services.AddGrpcClients(_configuration);
 		}

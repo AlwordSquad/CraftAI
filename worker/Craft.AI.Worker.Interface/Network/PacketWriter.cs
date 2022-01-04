@@ -7,8 +7,6 @@ namespace Craft.AI.Worker.Interface
 	public class PacketWriter
 	{
 		private readonly IReadOnlyDictionary<Type, byte> _mapping;
-		private byte _packetMetaSize = sizeof(int) + 1;
-
 		public PacketWriter(IReadOnlyDictionary<Type, byte> mapping)
 		{
 			_mapping = mapping;

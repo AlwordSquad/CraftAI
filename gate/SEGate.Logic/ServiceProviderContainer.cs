@@ -7,7 +7,7 @@ namespace CraftAI.Gate.Logic
 {
 	public static class ServiceProviderContainer
 	{
-		public static IServiceCollection AddSEGate(this IServiceCollection services)
+		public static IServiceCollection AddCraftGate(this IServiceCollection services)
 		{
 			services.AddSingleton<IServersHub, ServersHub>();
 			EventHandlers.RegisterCollections(services);

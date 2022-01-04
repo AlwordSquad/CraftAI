@@ -11,7 +11,8 @@ namespace Craft.AI.Worker.Interface
 		public static readonly IReadOnlyDictionary<byte, Type> Types = new Dictionary<byte, Type>
 		{
 			{ 1, typeof(PingPacket) },
-			{ 2, typeof(TerrainRequest) }
+			{ 2, typeof(TerrainRequest) },
+			{ 3, typeof(CreateSandboxRequest) },
 		};
 
 		public static readonly IReadOnlyDictionary<Type, byte> Bytes = Types.ToDictionary(e => e.Value, e => e.Key);
