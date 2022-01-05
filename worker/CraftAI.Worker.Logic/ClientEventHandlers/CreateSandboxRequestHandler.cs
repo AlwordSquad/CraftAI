@@ -2,10 +2,14 @@
 using Craft.AI.Worker.Interface.Network.Serverbound;
 using System.Threading.Tasks;
 
-namespace CraftAI.Worker.Logic.EventHandlers
+namespace CraftAI.Worker.Logic.ClientEventHandlers
 {
-	class CreateAgentEventHandler : BaseEventHandler<CreateAgentRequest>
+	public class CreateSandboxRequestHandler : BaseEventHandler<CreateAgentRequest>
 	{
+		public CreateSandboxRequestHandler()
+		{
+
+		}
 		protected override Task Handle(ISender sender, CreateAgentRequest value)
 		{
 			throw new System.NotImplementedException();

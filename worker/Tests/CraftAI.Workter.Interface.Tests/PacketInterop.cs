@@ -18,7 +18,7 @@ namespace CraftAI.Workter.Interface.Tests
 				Timestamp = DateTime.UtcNow.Ticks
 			};
 
-			var sender = new Mock<IUIClient>();
+			var sender = new Mock<ISender>();
 			var eventHub = new Mock<IEventHub>();
 			var eventHandelr = new Mock<IEventHandler>();
 			eventHub.Setup(e => e.Get(typeof(PingPacket))).Returns(eventHandelr.Object);
@@ -28,7 +28,7 @@ namespace CraftAI.Workter.Interface.Tests
 			var reader = new WebsocketReader(sender.Object, ServerboundMapping.Types, eventHub.Object);
 			reader.Accept(bytes);
 			int length = 0;
-			eventHandelr.Verify(e => e.Handle(It.Is<IUIClient>(e => e == sender.Object), It.Is<byte[]>(w => MessagePackSerializer.Deserialize<PingPacket>(w, out length, System.Threading.CancellationToken.None).Timestamp == packet.Timestamp)));
+			eventHandelr.Verify(e => e.Handle(It.Is<ISender>(e => e == sender.Object), It.Is<byte[]>(w => MessagePackSerializer.Deserialize<PingPacket>(w, out length, System.Threading.CancellationToken.None).Timestamp == packet.Timestamp)));
 		}
 	}
 }

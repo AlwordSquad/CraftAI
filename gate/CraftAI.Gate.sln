@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "old", "old", "{8B93824E-4EB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Proto", "Bost.Proto\Bost.Proto.csproj", "{422E8826-95A2-407D-B078-0D45FC549384}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{2CE7BC2C-783E-4C1C-83A0-2223BDB83F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5E96DF9-D417-4126-A3F0-3B5848F263DB} = {14F5EB95-A337-4E63-88D0-244DAB14E721}
+		{D93CBEE2-5C62-49E8-A87A-64E2319AC5C4} = {2CE7BC2C-783E-4C1C-83A0-2223BDB83F74}
 		{422E8826-95A2-407D-B078-0D45FC549384} = {8B93824E-4EB0-4967-BAC7-8E31ED6CB0B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

@@ -5,7 +5,7 @@ namespace Craft.AI.Worker.Interface
 {
 	public interface ISandboxService
 	{
-		Task Create();
+		Task Create(CreateSandboxRequest createSandboxRequest);
 	}
 	public interface IWorker : ISandboxService
 	{

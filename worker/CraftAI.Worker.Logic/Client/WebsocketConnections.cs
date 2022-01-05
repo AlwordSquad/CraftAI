@@ -7,18 +7,18 @@ namespace CraftAI.Worker.Logic.Client
 {
 	public interface IUIClients
 	{
-		public string Add(IUIClient sender);
+		public string Add(ISender sender);
 		public void Remove(string senderId);
-		public IUIClient[] All();
-		public void All(Action<IUIClient> action);
+		public ISender[] All();
+		public void All(Action<ISender> action);
 	}
 	public class CraftAiClients : IUIClients
 	{
-		private readonly Dictionary<string, IUIClient> _senders = new();
-		public string Add(IUIClient sender) { _senders.Add(sender.Id, sender); return sender.Id; }
+		private readonly Dictionary<string, ISender> _senders = new();
+		public string Add(ISender sender) { _senders.Add(sender.Id, sender); return sender.Id; }
 		public void Remove(string senderId) => _senders.Remove(senderId);
-		public IUIClient[] All() => _senders.Values.ToArray();
-		public void All(Action<IUIClient> action)
+		public ISender[] All() => _senders.Values.ToArray();
+		public void All(Action<ISender> action)
 		{
 			foreach (var client in All())
 			{

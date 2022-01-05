@@ -7,7 +7,7 @@ namespace CraftAI.Worker.Logic.EventHandlers
 {
 	public class PingEventHandler : BaseEventHandler<PingPacket>
 	{
-		protected override Task Handle(IUIClient sender, PingPacket value)
+		protected override Task Handle(IWorker sender, PingPacket value)
 		{
 			throw new NotImplementedException();
 		}
