@@ -39,6 +39,8 @@ namespace Craft.AI.Worker.Interface
 			if (_queue.Count < _nextPacketLength) return;
 			var packet = _queue.DequeueRange(_nextPacketLength);
 			var type = _mapping[_nextPacketKey];
+			_nextPacketLength = NoData;
+			_nextPacketKey = NoData;
 			FireEvent(type, packet);
 		}
 		private async void FireEvent(Type type, byte[] value)

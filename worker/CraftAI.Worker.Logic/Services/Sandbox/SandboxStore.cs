@@ -13,7 +13,7 @@ namespace CraftAI.Worker.Logic.Services.Sandbox
 	{
 		Task<string> AddSandbox(CreateSandboxRequest createSandboxRequest);
 		Task Remove(string id);
-		Task<SandboxItem[]> GetAll(CreateSandboxRequest createSandboxRequest);
+		Task<SandboxItem[]> GetAll();
 	}
 	public class SandboxStore : ISandboxStore
 	{
@@ -36,7 +36,7 @@ namespace CraftAI.Worker.Logic.Services.Sandbox
 			return sandboxs.Id;
 		}
 
-		public async Task<SandboxItem[]> GetAll(CreateSandboxRequest createSandboxRequest)
+		public async Task<SandboxItem[]> GetAll()
 		{
 			var documents = await _books.Find(book => true).ToListAsync();
 			var sandboxs = _mapper.Map<SandboxItem[]>(documents);

@@ -11,7 +11,7 @@ namespace CraftAI.Worker.Logic.Client
 	{
 		private readonly WebSocket _webSocket;
 		private static readonly PacketWriter packetWriter = new PacketWriter(ClientboundMapping.Bytes);
-		public string Id => new Guid().ToString();
+		public string Id => Guid.NewGuid().ToString();
 		public WebsocketSender(WebSocket webSocket)
 		{
 			_webSocket = webSocket;

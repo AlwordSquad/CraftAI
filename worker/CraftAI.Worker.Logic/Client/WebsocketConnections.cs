@@ -5,14 +5,14 @@ using System.Linq;
 
 namespace CraftAI.Worker.Logic.Client
 {
-	public interface IUIClients
+	public interface IWebHub
 	{
 		public string Add(ISender sender);
 		public void Remove(string senderId);
 		public ISender[] All();
 		public void All(Action<ISender> action);
 	}
-	public class CraftAiClients : IUIClients
+	public class CraftAiClients : IWebHub
 	{
 		private readonly Dictionary<string, ISender> _senders = new();
 		public string Add(ISender sender) { _senders.Add(sender.Id, sender); return sender.Id; }

@@ -16,7 +16,7 @@ namespace CraftAI.Worker.Logic
 			services.AddSingleton<ITerrainService, TerrainMongoDb>();
 			services.AddSingleton<IEventHub, EventHandlerCollection>();
 			services.AddSingleton<ISandboxStore, SandboxStore>();
-			services.AddSingleton<IUIClients, CraftAiClients>();
+			services.AddSingleton<IWebHub, CraftAiClients>();
 			services.AddAutoMapper(typeof(ServiceProvision));
 			EventHandlerCollection.Configure(services);
 			return services;

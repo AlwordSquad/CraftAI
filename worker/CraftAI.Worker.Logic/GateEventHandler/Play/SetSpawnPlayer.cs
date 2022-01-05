@@ -13,10 +13,10 @@ namespace CraftAI.Worker.Logic.GateApiService.Play
 	{
 		public class Handler : BaseRequestHandler<SpawnPlayer, Void>
 		{
-			private readonly IUIClients _clients;
+			private readonly IWebHub _clients;
 			private readonly IMapper _mapper;
 
-			public Handler(IUIClients clients, IMapper mapper)
+			public Handler(IWebHub clients, IMapper mapper)
 			{
 				_clients = clients;
 				_mapper = mapper;
