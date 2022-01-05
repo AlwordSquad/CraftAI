@@ -17,7 +17,8 @@ namespace CraftAI.Worker.Logic.Collections
 		{
 			{ typeof(PingPacket),typeof(PingEventHandler)},
 			{ typeof(TerrainRequest),typeof(TerrainRequestEventHandler)},
-			{ typeof(CreateAgentRequest),typeof(CreateSandboxRequestHandler)}
+			{ typeof(CreateAgentRequest),typeof(CreateAgentEventHandler)},
+			{ typeof(CreateSandboxRequest),typeof(CreateSandboxRequestHandler)}
 		};
 		public static void Configure(IServiceCollection services)
 		{

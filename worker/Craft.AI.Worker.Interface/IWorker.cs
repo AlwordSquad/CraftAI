@@ -3,13 +3,11 @@ using System.Threading.Tasks;
 
 namespace Craft.AI.Worker.Interface
 {
-	public interface ISandboxService
+	public interface IWorker
 	{
 		Task Create(CreateSandboxRequest createSandboxRequest);
-	}
-	public interface IWorker : ISandboxService
-	{
 		Task CreateAgent(CreateAgentRequest request);
 		Task RequestTerrain(TerrainRequest request);
+		Task CreateSandbox(CreateSandboxRequest request);
 	}
 }

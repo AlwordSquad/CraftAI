@@ -1,18 +1,20 @@
 ﻿using Craft.AI.Worker.Interface.Abstractions;
 using Craft.AI.Worker.Interface.Network.Serverbound;
+using CraftAI.Worker.Logic.Services.Sandbox;
 using System.Threading.Tasks;
 
 namespace CraftAI.Worker.Logic.ClientEventHandlers
 {
-	public class CreateSandboxRequestHandler : BaseEventHandler<CreateAgentRequest>
+	public class CreateSandboxRequestHandler : BaseEventHandler<CreateSandboxRequest>
 	{
-		public CreateSandboxRequestHandler()
+		private readonly ISandboxStore _sandboxService;
+		public CreateSandboxRequestHandler(ISandboxStore sandboxService)
 		{
-
+			_sandboxService = sandboxService;
 		}
-		protected override Task Handle(ISender sender, CreateAgentRequest value)
+		protected override Task Handle(ISender sender, CreateSandboxRequest value)
 		{
-			throw new System.NotImplementedException();
+			return _sandboxService.AddSandbox(value);
 		}
 	}
 }

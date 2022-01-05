@@ -1,4 +1,5 @@
 ﻿using Craft.AI.Worker.Interface.Abstractions;
+using CraftAI.Worker.Logic.Client;
 using CraftAI.Worker.Logic.Collections;
 using CraftAI.Worker.Logic.Services;
 using CraftAI.Worker.Logic.Services.Sandbox;
@@ -15,6 +16,7 @@ namespace CraftAI.Worker.Logic
 			services.AddSingleton<ITerrainService, TerrainMongoDb>();
 			services.AddSingleton<IEventHub, EventHandlerCollection>();
 			services.AddSingleton<ISandboxStore, SandboxStore>();
+			services.AddSingleton<IUIClients, CraftAiClients>();
 			services.AddAutoMapper(typeof(ServiceProvision));
 			EventHandlerCollection.Configure(services);
 			return services;
