@@ -11,5 +11,6 @@ namespace Craft.AI.Worker.Interface
 		Task RequestTerrain(TerrainRequest request);
 		Task CreateSandbox(CreateSandboxRequest request);
 		Task GetSandboxRequest(GetSandboxesRequest request);
+		Task RemoveSandbox(RemoveSandboxRequest request);
 	}
 }
