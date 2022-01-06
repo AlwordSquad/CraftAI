@@ -31,8 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Entity\Feature\" />
-    <Folder Include="Services\Items\" />
+    <Folder Include="Features\Queries\" />
   </ItemGroup>
 
 </Project>

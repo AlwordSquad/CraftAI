@@ -5,6 +5,7 @@ namespace Craft.AI.Worker.Interface
 {
 	public interface IWeb
 	{
+		string SandboxId { get; set; }
 		Task SetSandboxList(CreateSandboxResponse response);
 	}
 }

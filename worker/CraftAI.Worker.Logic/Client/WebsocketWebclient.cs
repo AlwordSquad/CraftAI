@@ -8,6 +8,7 @@ namespace CraftAI.Worker.Logic.Client
 	internal class WebsocketWebclient : IWeb
 	{
 		private readonly ISender _sender;
+		public string SandboxId { get; set; } = string.Empty;
 		public WebsocketWebclient(ISender sender) => _sender = sender;
 		public Task SetSandboxList(CreateSandboxResponse response) => _sender.SendMessage(response);
 	}

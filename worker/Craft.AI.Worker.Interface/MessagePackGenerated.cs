@@ -49,7 +49,7 @@ namespace MessagePack.Resolvers
 
         static GeneratedResolverGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(18)
+            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(19)
             {
                 { typeof(global::Craft.AI.Worker.Interface.Network.Clientbound.SandboxItem[]), 0 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.ChunkPosition[]), 1 },
@@ -67,8 +67,9 @@ namespace MessagePack.Resolvers
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int2), 13 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.Int3), 14 },
                 { typeof(global::Craft.AI.Worker.Interface.Network.Shared.PingPacket), 15 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Workerbound.GetSandboxesRequest), 16 },
-                { typeof(global::Craft.AI.Worker.Interface.Network.Workerbound.RemoveSandboxRequest), 17 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequest), 16 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Workerbound.GetSandboxesRequest), 17 },
+                { typeof(global::Craft.AI.Worker.Interface.Network.Workerbound.RemoveSandboxRequest), 18 },
             };
         }
 
@@ -98,8 +99,9 @@ namespace MessagePack.Resolvers
                 case 13: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int2Formatter();
                 case 14: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.Int3Formatter();
                 case 15: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Shared.PingPacketFormatter();
-                case 16: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound.GetSandboxesRequestFormatter();
-                case 17: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound.RemoveSandboxRequestFormatter();
+                case 16: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequestFormatter();
+                case 17: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound.GetSandboxesRequestFormatter();
+                case 18: return new MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound.RemoveSandboxRequestFormatter();
                 default: return null;
             }
         }
@@ -846,6 +848,53 @@ namespace MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Workerbound
 {
     using global::System.Buffers;
     using global::MessagePack;
+
+    public sealed class ConnectSandboxRequestFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequest>
+    {
+
+        public void Serialize(ref global::MessagePack.MessagePackWriter writer, global::Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequest value, global::MessagePack.MessagePackSerializerOptions options)
+        {
+            if (value == null)
+            {
+                writer.WriteNil();
+                return;
+            }
+
+            global::MessagePack.IFormatterResolver formatterResolver = options.Resolver;
+            writer.WriteArrayHeader(2);
+            writer.WriteNil();
+            formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.SandboxId, options);
+        }
+
+        public global::Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequest Deserialize(ref global::MessagePack.MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
+        {
+            if (reader.TryReadNil())
+            {
+                return null;
+            }
+
+            options.Security.DepthStep(ref reader);
+            global::MessagePack.IFormatterResolver formatterResolver = options.Resolver;
+            var length = reader.ReadArrayHeader();
+            var ____result = new global::Craft.AI.Worker.Interface.Network.Workerbound.ConnectSandboxRequest();
+
+            for (int i = 0; i < length; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                        ____result.SandboxId = formatterResolver.GetFormatterWithVerify<string>().Deserialize(ref reader, options);
+                        break;
+                    default:
+                        reader.Skip();
+                        break;
+                }
+            }
+
+            reader.Depth--;
+            return ____result;
+        }
+    }
 
     public sealed class GetSandboxesRequestFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::Craft.AI.Worker.Interface.Network.Workerbound.GetSandboxesRequest>
     {

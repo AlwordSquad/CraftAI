@@ -21,7 +21,8 @@ namespace CraftAI.Worker.Logic.Collections
 			{ typeof(CreateAgentRequest),typeof(CreateAgentEventHandler)},
 			{ typeof(CreateSandboxRequest),typeof(CreateSandboxRequestHandler)},
 			{ typeof(GetSandboxesRequest),typeof(GetSandboxesRequestHandler)},
-			{ typeof(RemoveSandboxRequest),typeof(RemoveSandboxRequestHandler)}
+			{ typeof(RemoveSandboxRequest),typeof(RemoveSandboxRequestHandler)},
+			{ typeof(ConnectSandboxRequest),typeof(ConnectSandboxRequestHandler)},
 		};
 		public static void Configure(IServiceCollection services)
 		{
@@ -30,6 +31,7 @@ namespace CraftAI.Worker.Logic.Collections
 			services.AddSingleton<CreateSandboxRequestHandler>();
 			services.AddSingleton<GetSandboxesRequestHandler>();
 			services.AddSingleton<RemoveSandboxRequestHandler>();
+			services.AddSingleton<ConnectSandboxRequestHandler>();
 		}
 
 		public EventHandlerCollection(IServiceProvider serviceProvider)
