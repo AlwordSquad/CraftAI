@@ -425,10 +425,9 @@ namespace MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound
             }
 
             global::MessagePack.IFormatterResolver formatterResolver = options.Resolver;
-            writer.WriteArrayHeader(3);
+            writer.WriteArrayHeader(2);
             writer.WriteNil();
             formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.Nickname, options);
-            formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.Host, options);
         }
 
         public global::Craft.AI.Worker.Interface.Network.Serverbound.CreateAgentRequest Deserialize(ref global::MessagePack.MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
@@ -449,9 +448,6 @@ namespace MessagePack.Formatters.Craft.AI.Worker.Interface.Network.Serverbound
                 {
                     case 1:
                         ____result.Nickname = formatterResolver.GetFormatterWithVerify<string>().Deserialize(ref reader, options);
-                        break;
-                    case 2:
-                        ____result.Host = formatterResolver.GetFormatterWithVerify<string>().Deserialize(ref reader, options);
                         break;
                     default:
                         reader.Skip();

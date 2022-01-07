@@ -4,5 +4,6 @@
 	{
 		public const string Section = "Services";
 		public string Worker { get; set; }
+		public string Gate { get; set; }
 	}
 }

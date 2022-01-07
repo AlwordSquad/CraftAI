@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace CraftAI.Gate.Contract
 {
-	internal class GrpcGateWorker : IGateWorker
+	public class GrpcGateWorker : IGateWorker
 	{
 		private readonly CraftAIPlayClientbound.CraftAIPlayClientboundClient _playClientboundClient;
 		public GrpcGateWorker(CraftAIPlayClientbound.CraftAIPlayClientboundClient playClientboundClient)
