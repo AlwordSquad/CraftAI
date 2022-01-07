@@ -3,7 +3,13 @@ using CraftAI.Worker.Logic.Services.Items;
 
 namespace CraftAI.Worker.Logic.Services.Agent
 {
-	public class AgentEntity : IEntity
+	public interface IAgent : IEntity
+	{
+		public int Health { get; }
+		public int Starvation { get; }
+		public int Experience { get; }
+	}
+	public class AgentEntity : IAgent
 	{
 		public string UUID { get; set; } = string.Empty;
 		public int Id { get; set; }

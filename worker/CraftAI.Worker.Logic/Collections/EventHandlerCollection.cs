@@ -26,12 +26,7 @@ namespace CraftAI.Worker.Logic.Collections
 		};
 		public static void Configure(IServiceCollection services)
 		{
-			services.AddSingleton<PingEventHandler>();
-			services.AddSingleton<TerrainRequestEventHandler>();
-			services.AddSingleton<CreateSandboxRequestHandler>();
-			services.AddSingleton<GetSandboxesRequestHandler>();
-			services.AddSingleton<RemoveSandboxRequestHandler>();
-			services.AddSingleton<ConnectSandboxRequestHandler>();
+			foreach (var type in _keyValuePairs.Values) services.AddTransient(type);
 		}
 
 		public EventHandlerCollection(IServiceProvider serviceProvider)

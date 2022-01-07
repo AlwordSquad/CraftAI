@@ -17,6 +17,7 @@ namespace Craft.AI.Worker.Interface
 			{ 4, typeof(GetSandboxesRequest) },
 			{ 5, typeof(RemoveSandboxRequest) },
 			{ 6, typeof(ConnectSandboxRequest) },
+			{ 7, typeof(CreateAgentRequest) },
 		};
 
 		public static readonly IReadOnlyDictionary<Type, byte> Bytes = Types.ToDictionary(e => e.Value, e => e.Key);

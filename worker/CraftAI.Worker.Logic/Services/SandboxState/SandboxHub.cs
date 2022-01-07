@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CraftAI.Worker.Logic.Services.Sandbox;
+using System.Collections.Generic;
 
 namespace CraftAI.Worker.Logic.Services.SandboxState
 {
@@ -11,10 +12,17 @@ namespace CraftAI.Worker.Logic.Services.SandboxState
 	public class SandboxHub : ISandboxHub
 	{
 		private readonly Dictionary<string, ISandboxSate> _sandboxState = new(1);
+		private readonly ISandboxStore _sandboxStore;
+		public SandboxHub(ISandboxStore sandboxStore)
+		{
+			_sandboxStore = sandboxStore;
+		}
+
 		public ISandboxSate GetState(string id)
 		{
 			if (!_sandboxState.TryGetValue(id, out var state))
 			{
+				// _sandboxStore
 				state = new ActualSandboxState();
 				_sandboxState.Add(id, state);
 			}
