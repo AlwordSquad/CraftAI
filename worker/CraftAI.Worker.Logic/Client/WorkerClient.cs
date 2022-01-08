@@ -27,18 +27,18 @@ namespace CraftAI.Worker.Logic.Client
 		public async Task WriteLoopAsync()
 		{
 			Memory<byte> buffer = ArrayPool<byte>.Shared.Rent(4 * 1024);
-			try
+			while (true)
 			{
-				while (true)
+				try
 				{
 					var result = await _socket.ReceiveAsync(buffer, _cts.Token);
-					var usefulBuffer = buffer.Slice(0, result.Count).ToArray();
+					var usefulBuffer = buffer[..result.Count].ToArray();
 					_websocketReader.Accept(usefulBuffer);
 				}
-			}
-			catch (Exception ex)
-			{
-				Log.Error(ex, "socket error handling");
+				catch (Exception ex)
+				{
+					Log.Error(ex, "socket error handling");
+				}
 			}
 		}
 	}

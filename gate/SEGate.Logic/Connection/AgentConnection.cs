@@ -1,8 +1,8 @@
-﻿using System;
+﻿using CraftAI.Gate.Logic.Abstractions;
+using System;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using CraftAI.Gate.Logic.Abstractions;
 
 namespace CraftAI.Gate.Logic.Connection
 {
@@ -17,8 +17,8 @@ namespace CraftAI.Gate.Logic.Connection
 		/// <param name="host">server ip:port</param>
 		public AgentConnection(string userName, string host)
 		{
-			_userName = userName;
-			var serverPort = host.Split(':');
+			_userName = userName.Replace("​", "").Trim(); // char(8203) ('') меняем на ''
+			var serverPort = host.Trim().Split(':');
 			_address = serverPort[0];
 			_port = ushort.Parse(serverPort[1]);
 		}

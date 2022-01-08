@@ -1,12 +1,12 @@
-﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
-using CraftAI.Gate.Service;
+﻿using CraftAI.Gate.Contract;
+using CraftAI.Gate.Logic.LLAPI.Abstractions;
 
 namespace CraftAI.Gate.Logic.Abstractions
 {
 	public abstract class GrpcPlayEventConvertor<T> : IEventHandler<T> where T : IPacketData
 	{
-		protected readonly CraftAIPlayClientbound.CraftAIPlayClientboundClient _client;
-		public GrpcPlayEventConvertor(CraftAIPlayClientbound.CraftAIPlayClientboundClient client)
+		protected readonly IGateWorker _client;
+		public GrpcPlayEventConvertor(IGateWorker client)
 		{
 			_client = client;
 		}

@@ -6,6 +6,6 @@ namespace CraftAI.Gate.Contract
 	public interface IGateWorker
 	{
 		public Task SetChunkData(Chunk16x16x16 chunk);
-		public Task SpawnPlayer(SpawnPlayer player);
+		public Task SpawnPlayerAsync(SpawnPlayer player);
 	}
 }

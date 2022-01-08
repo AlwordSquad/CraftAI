@@ -40,7 +40,7 @@ namespace CraftAI.Worker.Logic.Middleware
 			try
 			{
 				var sender = new WebsocketSender(socket);
-				senderId = _clients.Add(sender);
+				senderId = _clients.Add(new WebsocketWebclient(sender));
 				var reader = new WebsocketReader(sender, ServerboundMapping.Types, _eventHub);
 				var client = new WorkerClient(socket, reader);
 				await client.RunAsync();

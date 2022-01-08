@@ -1,5 +1,6 @@
 ﻿using CraftAI.Gate.Logic.LLAPI.Abstractions;
 using CraftAI.Gate.Logic.LLAPI.Attributes;
+using System;
 
 namespace CraftAI.Gate.Logic.LLAPI.Play.Clientbound
 {
@@ -16,7 +17,7 @@ namespace CraftAI.Gate.Logic.LLAPI.Play.Clientbound
 		/// <summary>Player's EID.</summary>
 		[LVarint] public int EntityID { get; set; }
 		/// <summary>See on link for notes on offline mode and NPCs.</summary>
-		[LUUID] public string PlayerUUID { get; set; }
+		[LUUID] public Guid PlayerUUID { get; set; }
 		[LDouble] public double X { get; set; }
 		[LDouble] public double Y { get; set; }
 		[LDouble] public double Z { get; set; }

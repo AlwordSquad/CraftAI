@@ -15,7 +15,6 @@ namespace CraftAI.Worker.Logic.GateApiService.Play
 		{
 			private readonly IWebHub _clients;
 			private readonly IMapper _mapper;
-
 			public Handler(IWebHub clients, IMapper mapper)
 			{
 				_clients = clients;
@@ -25,7 +24,7 @@ namespace CraftAI.Worker.Logic.GateApiService.Play
 			{
 				Log.Information($"{(nameof(SpawnPlayer))} {request.EntityId} {request.X}.{request.Y}.{request.Z}");
 				var playerData = _mapper.Map<SetPlayerSpawnDataCommand>(request);
-				_clients.All(client => client.SendMessage(playerData));
+				_clients.All(client => client.SpawnPlayer(playerData));
 				return Task.FromResult(new Void());
 			}
 		}
