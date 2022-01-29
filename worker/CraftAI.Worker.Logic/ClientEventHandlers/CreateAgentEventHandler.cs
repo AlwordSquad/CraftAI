@@ -1,14 +1,31 @@
-﻿using Craft.AI.Worker.Interface.Abstractions;
+﻿using Craft.AI.Worker.Interface;
 using Craft.AI.Worker.Interface.Network.Serverbound;
+using CraftAI.Gate.Contract;
+using CraftAI.Gate.Service;
+using CraftAI.Worker.Logic.Abstractions;
+using CraftAI.Worker.Logic.Services.SandboxState;
 using System.Threading.Tasks;
 
 namespace CraftAI.Worker.Logic.EventHandlers
 {
-	class CreateAgentEventHandler : BaseEventHandler<CreateAgentRequest>
+	public class CreateAgentEventHandler : BaseSandboxEventHandler<CreateAgentRequest>
 	{
-		protected override Task Handle(IUIClient sender, CreateAgentRequest value)
+		private readonly IGate _gate;
+		public CreateAgentEventHandler(ISandboxHub sandboxHub, IGate gate) : base(sandboxHub)
 		{
-			throw new System.NotImplementedException();
+			_gate = gate;
+		}
+		protected async override Task Handle(IWeb sender, ISandboxSate sandbox, CreateAgentRequest value)
+		{
+			var uri = sandbox.URI;
+			var hasAgent = sandbox.Agents.ContainsKey(value.Nickname);
+			if (hasAgent) return;
+
+			await _gate.Connect(new ConnectRequest()
+			{
+				Nickname = value.Nickname,
+				ServerUri = uri
+			});
 		}
 	}
 }

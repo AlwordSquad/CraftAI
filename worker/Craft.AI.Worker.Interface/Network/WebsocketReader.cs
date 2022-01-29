@@ -10,14 +10,14 @@ namespace Craft.AI.Worker.Interface
 		private const int NoData = 0;
 
 		private readonly Queue<byte> _queue = new Queue<byte>(4 * 1024);
-		private readonly IUIClient _sender;
+		private readonly ISender _sender;
 		private readonly IReadOnlyDictionary<byte, Type> _mapping;
 		private readonly IEventHub _eventHub;
 		private uint _nextPacketLength = NoData;
 		private byte _nextPacketKey = NoData;
 		private byte _packetMetaSize = sizeof(int) + 1;
 		public WebsocketReader(
-			IUIClient sender,
+			ISender sender,
 			IReadOnlyDictionary<byte, Type> mapping,
 			IEventHub eventHub)
 		{
@@ -39,6 +39,8 @@ namespace Craft.AI.Worker.Interface
 			if (_queue.Count < _nextPacketLength) return;
 			var packet = _queue.DequeueRange(_nextPacketLength);
 			var type = _mapping[_nextPacketKey];
+			_nextPacketLength = NoData;
+			_nextPacketKey = NoData;
 			FireEvent(type, packet);
 		}
 		private async void FireEvent(Type type, byte[] value)

@@ -13,9 +13,9 @@ namespace CraftAI.Worker.Logic.Middleware
 	{
 		private RequestDelegate _next;
 		private readonly IEventHub _eventHub;
-		private readonly IUIClients _clients;
+		private readonly IWebHub _clients;
 
-		public SocketWare(RequestDelegate next, IEventHub eventHub, IUIClients clients)
+		public SocketWare(RequestDelegate next, IEventHub eventHub, IWebHub clients)
 		{
 			_next = next;
 			_eventHub = eventHub;
@@ -40,7 +40,7 @@ namespace CraftAI.Worker.Logic.Middleware
 			try
 			{
 				var sender = new WebsocketSender(socket);
-				senderId = _clients.Add(sender);
+				senderId = _clients.Add(new WebsocketWebclient(sender));
 				var reader = new WebsocketReader(sender, ServerboundMapping.Types, _eventHub);
 				var client = new WorkerClient(socket, reader);
 				await client.RunAsync();
@@ -48,6 +48,9 @@ namespace CraftAI.Worker.Logic.Middleware
 			catch (Exception ex)
 			{
 				Log.Error(ex, $"Web-socket connection error for {nameof(SocketWare)}");
+			}
+			finally
+			{
 				_clients.Remove(senderId);
 			}
 		}

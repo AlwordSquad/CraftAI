@@ -1,4 +1,5 @@
-﻿using CraftAI.Gate.Features;
+﻿using CraftAI.Gate.Contract;
+using CraftAI.Gate.Features;
 using CraftAI.Gate.Logic;
 using CraftAI.Gate.Service.Services;
 using Microsoft.AspNetCore.Builder;
@@ -22,9 +23,9 @@ namespace CraftAI.Gate.Service
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddGrpc();
-			services.AddSEGate();
+			services.AddCraftGate();
 			services.AddCraftAIFeatures();
-			services.AddGrpcClients(_configuration);
+			GrpcGateWorker.AddClients(services, _configuration);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

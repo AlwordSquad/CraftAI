@@ -1,4 +1,5 @@
 ﻿using Craft.AI.Worker.Interface.Network.Clientbound;
+using Craft.AI.Worker.Interface.Network.Serverbound;
 using Craft.AI.Worker.Interface.Network.Shared;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace Craft.AI.Worker.Interface
 			{ 1, typeof(PingPacket) },
 			{ 2, typeof(SetChunkRenderCommand) },
 			{ 3, typeof(SetPlayerSpawnDataCommand) },
+			{ 4, typeof(CreateSandboxResponse) },
+			{ 5, typeof(CreateAgentRequest) },
 		};
 
 		public static readonly IReadOnlyDictionary<Type, byte> Bytes = Types.ToDictionary(e => e.Value, e => e.Key);

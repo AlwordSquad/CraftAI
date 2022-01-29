@@ -1,6 +1,8 @@
 ﻿using Craft.AI.Worker.Interface.Abstractions;
 using Craft.AI.Worker.Interface.Network.Serverbound;
 using Craft.AI.Worker.Interface.Network.Shared;
+using Craft.AI.Worker.Interface.Network.Workerbound;
+using CraftAI.Worker.Logic.ClientEventHandlers;
 using CraftAI.Worker.Logic.EventHandlers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -15,12 +17,16 @@ namespace CraftAI.Worker.Logic.Collections
 		private static readonly IReadOnlyDictionary<Type, Type> _keyValuePairs = new Dictionary<Type, Type>
 		{
 			{ typeof(PingPacket),typeof(PingEventHandler)},
-			{ typeof(TerrainRequest),typeof(TerrainRequestEventHandler)}
+			{ typeof(TerrainRequest),typeof(TerrainRequestEventHandler)},
+			{ typeof(CreateAgentRequest),typeof(CreateAgentEventHandler)},
+			{ typeof(CreateSandboxRequest),typeof(CreateSandboxRequestHandler)},
+			{ typeof(GetSandboxesRequest),typeof(GetSandboxesRequestHandler)},
+			{ typeof(RemoveSandboxRequest),typeof(RemoveSandboxRequestHandler)},
+			{ typeof(ConnectSandboxRequest),typeof(ConnectSandboxRequestHandler)},
 		};
 		public static void Configure(IServiceCollection services)
 		{
-			services.AddSingleton<PingEventHandler>();
-			services.AddSingleton<TerrainRequestEventHandler>();
+			foreach (var type in _keyValuePairs.Values) services.AddTransient(type);
 		}
 
 		public EventHandlerCollection(IServiceProvider serviceProvider)

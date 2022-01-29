@@ -7,11 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{14F5EB95
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Logic", "SEGate.Logic\CraftAI.Gate.Logic.csproj", "{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}"
 EndProject
-<<<<<<< HEAD:gate/CraftAI.Gate.sln
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Logic", "SEGate.Logic\CraftAI.Gate.Logic.csproj", "{6BEF383F-04CA-4BE0-ACDF-6F91186CB788}"
-EndProject
-=======
->>>>>>> af32b0cb5c329dfafa204ac3eddb57b51d274ebc:gate/Bost.sln
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Interface", "SEGate.Interface\CraftAI.Gate.Interface.csproj", "{2873F9AA-6665-4F80-8D6E-96C12B76520E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Logic.Tests", "SEGate.Logic.Tests\CraftAI.Gate.Logic.Tests.csproj", "{C5E96DF9-D417-4126-A3F0-3B5848F263DB}"
@@ -21,13 +16,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Contract", "CraftAI.Gate.Contract\CraftAI.Gate.Contract.csproj", "{D93CBEE2-5C62-49E8-A87A-64E2319AC5C4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftAI.Gate.Features", "CraftAI.Gate.Logic\CraftAI.Gate.Features.csproj", "{97DE2A97-1CD6-4A85-ACAA-26CE2405F7EA}"
-<<<<<<< HEAD:gate/CraftAI.Gate.sln
-=======
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "old", "old", "{8B93824E-4EB0-4967-BAC7-8E31ED6CB0B6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bost.Proto", "Bost.Proto\Bost.Proto.csproj", "{422E8826-95A2-407D-B078-0D45FC549384}"
->>>>>>> af32b0cb5c329dfafa204ac3eddb57b51d274ebc:gate/Bost.sln
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{2CE7BC2C-783E-4C1C-83A0-2223BDB83F74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +63,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5E96DF9-D417-4126-A3F0-3B5848F263DB} = {14F5EB95-A337-4E63-88D0-244DAB14E721}
+		{D93CBEE2-5C62-49E8-A87A-64E2319AC5C4} = {2CE7BC2C-783E-4C1C-83A0-2223BDB83F74}
 		{422E8826-95A2-407D-B078-0D45FC549384} = {8B93824E-4EB0-4967-BAC7-8E31ED6CB0B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
