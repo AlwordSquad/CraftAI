@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftAI.ResourcePacks", "CraftAI.ResourcePacks.csproj", "{3FABC937-8208-42EE-B0BF-8844608B83F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{967AFDB7-EAD9-4347-AC00-65B3D7FE2120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftAI.ResourcePacks.Tests", "..\CraftAI.ResourcePacks.Tests\CraftAI.ResourcePacks.Tests.csproj", "{E9D0BB28-5D1D-42DB-A230-5E241B6602E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FABC937-8208-42EE-B0BF-8844608B83F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FABC937-8208-42EE-B0BF-8844608B83F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FABC937-8208-42EE-B0BF-8844608B83F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FABC937-8208-42EE-B0BF-8844608B83F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D0BB28-5D1D-42DB-A230-5E241B6602E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D0BB28-5D1D-42DB-A230-5E241B6602E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D0BB28-5D1D-42DB-A230-5E241B6602E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D0BB28-5D1D-42DB-A230-5E241B6602E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9D0BB28-5D1D-42DB-A230-5E241B6602E8} = {967AFDB7-EAD9-4347-AC00-65B3D7FE2120}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C720FDF-683A-4B8D-A3A3-7C295E4FCC6E}
+	EndGlobalSection
+EndGlobal

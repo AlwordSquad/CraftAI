@@ -31,7 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Entity\Model\" />
     <Folder Include="Services\Entity\Feature\" />
     <Folder Include="Services\Items\" />
   </ItemGroup>
