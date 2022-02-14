@@ -10,12 +10,12 @@ namespace CraftAI.ResourcePacks.Utils
 			new BlockModelsReader()
 		};
 
-		public static string FromDefaults()
+		public static ResourcePackJson FromDefaults()
 		{
 			using var stream = DefaultResourcePackStream();
 			return From(stream);
 		}
-		public static string From(Stream stream)
+		public static ResourcePackJson From(Stream stream)
 		{
 			var resourcePack = new ResourcePackJson();
 			using var zip = new ZipArchive(stream);
@@ -28,7 +28,7 @@ namespace CraftAI.ResourcePacks.Utils
 					reader.Read(entity.Name, entityStream, resourcePack);
 				}
 			}
-			throw new NotImplementedException();
+			return resourcePack;
 		}
 
 		private static Stream DefaultResourcePackStream()

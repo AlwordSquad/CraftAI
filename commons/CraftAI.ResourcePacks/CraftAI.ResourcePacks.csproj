@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CraftAI.Vectors\CraftAI.Vectors.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Resources\Packs\Default117.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

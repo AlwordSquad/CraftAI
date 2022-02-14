@@ -1,4 +1,5 @@
-﻿using CraftAI.ResourcePacks.Utils;
+﻿using CraftAI.ResourcePacks.Builders;
+using CraftAI.ResourcePacks.Utils;
 using Xunit;
 
 namespace CraftAI.ResourcePacks.Tests.Utils
@@ -8,7 +9,8 @@ namespace CraftAI.ResourcePacks.Tests.Utils
 		[Fact]
 		public void ReadDefaultResourcePack()
 		{
-			var stream = ResourcePackReader.FromDefaults();
+			var jsonModel = ResourcePackReader.FromDefaults();
+			var palette = MeshesBuilder.PaletteFrom(jsonModel);
 		}
 	}
 }
