@@ -11,8 +11,9 @@ namespace CraftAI.ResourcePacks.Readers
 			PropertyNameCaseInsensitive = true,
 		};
 
+		public void Finish(ResourcePackJson resourcePack) { return; }
 		public bool IsMatch(string path)
-			=> path.Length > pattern.Length && path.StartsWith(@"assets/minecraft/models/block/");
+			=> path.Length > pattern.Length && path.StartsWith(pattern);
 
 		public void Read(string name, Stream stream, in ResourcePackJson resourcePack)
 		{

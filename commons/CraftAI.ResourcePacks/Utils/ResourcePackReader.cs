@@ -7,7 +7,9 @@ namespace CraftAI.ResourcePacks.Utils
 	{
 		private static readonly IReadOnlyCollection<IResourceReader> _readers = new List<IResourceReader>
 		{
-			new BlockModelsReader()
+			// new BlockModelsReader(),
+			new ImageReader(),
+#warning enable all in production
 		};
 
 		public static ResourcePackJson FromDefaults()
@@ -28,6 +30,7 @@ namespace CraftAI.ResourcePacks.Utils
 					reader.Read(entity.Name, entityStream, resourcePack);
 				}
 			}
+			foreach (var reader in _readers) reader.Finish(resourcePack);
 			return resourcePack;
 		}
 
